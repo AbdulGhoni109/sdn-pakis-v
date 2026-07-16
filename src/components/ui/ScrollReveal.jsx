@@ -1,0 +1,33 @@
+import { useEffect, useRef } from 'react';
+
+/**
+ * ScrollReveal — wraps children with a fade-up animation when scrolled into view.
+ * Usage: <ScrollReveal delay={200}><YourComponent /></ScrollReveal>
+ */
+export default function ScrollReveal({ children, className = '', delay = 0 }) {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add('visible'), delay);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.12 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
+
+  return (
+    <div ref={ref} className={`reveal ${className}`}>
+      {children}
+    </div>
+  );
+}
