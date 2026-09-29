@@ -2,6 +2,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Beranda from './pages/Beranda';
 import Profil from './pages/Profil';
+import MediaAR from './pages/MediaAR';
 import Berita from './pages/Berita';
 import Prestasi from './pages/Prestasi';
 import Ekskul from './pages/Ekskul';
@@ -17,6 +18,7 @@ export default function App() {
         {/* All sections stacked — navbar highlights active via IntersectionObserver */}
         <Beranda />
         <Profil />
+        <MediaAR />
         <Berita />
         <Prestasi />
         <Ekskul />

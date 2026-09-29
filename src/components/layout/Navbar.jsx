@@ -45,7 +45,7 @@ export default function Navbar() {
   };
 
   const linkClass = (id) =>
-    `relative text-sm font-semibold transition-colors duration-200 px-1 py-0.5 cursor-pointer
+    `relative text-xs xl:text-sm font-semibold transition-colors duration-200 px-1 py-0.5 cursor-pointer whitespace-nowrap
      after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-accent-500
      after:transition-all after:duration-300
      ${activeId === id
@@ -82,7 +82,7 @@ export default function Navbar() {
           </button>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) => (
               <button
                 key={link.id}

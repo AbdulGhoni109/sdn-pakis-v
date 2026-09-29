@@ -393,6 +393,7 @@ export const learningTools = [
 export const navLinks = [
   { label: 'Beranda',                id: 'beranda' },
   { label: 'Profil',                 id: 'profil' },
+  { label: 'Media AR',               id: 'media-ar' },
   { label: 'Berita',                 id: 'berita' },
   { label: 'Prestasi',               id: 'prestasi' },
   { label: 'Ekstrakurikuler',        id: 'ekskul' },
