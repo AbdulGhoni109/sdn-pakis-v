@@ -60,6 +60,7 @@ export default function MediaAR() {
             <SectionHeader
               title="Media Pembelajaran WebAR: Garuda Pancasila"
               subtitle="Teknologi Augmented Reality interaktif berbasis web untuk menunjang Pendidikan Pancasila & Kewarganegaraan siswa SDN Pakis V Surabaya."
+              centered
             />
           </div>
         </ScrollReveal>
