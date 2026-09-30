@@ -209,10 +209,10 @@ export default function WebcamARViewer() {
           {!cameraActive ? (
             <button
               onClick={() => startCamera()}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-sm shadow-lg transition-transform active:scale-95"
+              className="flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm shadow-[0_4px_15px_rgba(251,191,36,0.5)] transition-all transform active:scale-95 border-2 border-amber-300 cursor-pointer"
             >
-              <Camera className="w-4 h-4 text-slate-950" />
-              Nyalakan Kamera AR
+              <Camera className="w-5 h-5 text-slate-950 stroke-[2.5]" />
+              <span className="text-slate-950 font-black tracking-wide">Nyalakan Kamera AR</span>
             </button>
           ) : (
             <>
@@ -445,7 +445,7 @@ export default function WebcamARViewer() {
         </div>
       </div>
 
-      {/* Guide Note for students & thesis reviewers */}
+      {/* Tips Pembelajaran untuk Siswa */}
       <div className="mt-3 flex items-start gap-2 text-[11px] text-slate-400 bg-slate-900/60 p-2.5 rounded-xl border border-slate-800">
         <Info className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
         <p>

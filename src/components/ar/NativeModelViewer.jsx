@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Smartphone, Sparkles, Box, QrCode, CheckCircle, ExternalLink, HelpCircle } from 'lucide-react';
+import { Smartphone, Sparkles, Box, QrCode, CheckCircle, HelpCircle, Download } from 'lucide-react';
 
 export default function NativeModelViewer() {
   const [autoRotate, setAutoRotate] = useState(true);
@@ -33,29 +33,39 @@ export default function NativeModelViewer() {
             className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs sm:text-sm font-bold transition-colors"
           >
             <QrCode className="w-4 h-4 text-primary-700" />
-            {showQr ? 'Tutup QR HP' : 'Scan di HP Siswa'}
+            {showQr ? 'Tutup Kode QR' : 'Buka di HP (Kode QR)'}
           </button>
         </div>
       </div>
 
-      {/* QR Code Modal / Popup for presentations */}
+      {/* QR Code Modal / Popup for opening on smartphone */}
       {showQr && (
         <div className="mb-6 p-5 rounded-2xl bg-primary-50 border border-primary-200 flex flex-col sm:flex-row items-center gap-6">
           <img
             src={qrCodeUrl}
-            alt="QR Code Website SDN Pakis V"
+            alt="Kode QR Akses Website SDN Pakis V"
             className="w-36 h-36 rounded-xl bg-white p-2 shadow-md border border-primary-100"
           />
           <div className="text-left">
             <span className="inline-block px-2.5 py-0.5 rounded-full bg-primary-700 text-white text-[10px] font-bold uppercase tracking-wider mb-1">
-              Khusus Presentasi Sidang & Uji Coba Siswa
+              Akses Cepat Smartphone Siswa
             </span>
             <h4 className="text-base font-bold text-primary-900">
-              Buka Langsung di Kamera HP Anda
+              Pindai Kode QR untuk Membuka Website di HP
             </h4>
             <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-              Scan barcode di atas menggunakan kamera smartphone (iPhone/Android). Buka link di browser Chrome atau Safari, lalu tekan tombol <strong>&quot;Lihat di Ruangan Anda (AR)&quot;</strong> di bawah ini. Objek Garuda akan langsung berdiri di atas meja sidang Anda!
+              Arahkan kamera HP (Android/iPhone) ke kode QR ini untuk langsung membuka halaman web ini di ponsel siswa tanpa perlu mengetik link. Setelah halaman terbuka di HP, tekan tombol <strong>&quot;Lihat di Ruangan Nyata (AR HP)&quot;</strong> di bawah untuk memunculkan patung 3D Garuda di meja belajar!
             </p>
+            <div className="mt-3">
+              <a
+                href="/images/garuda.png"
+                download="Gambar_Lambang_Garuda_SDNPakisV.png"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-primary-200 text-primary-700 text-xs font-bold hover:bg-primary-100/60 shadow-sm transition-colors"
+              >
+                <Download className="w-3.5 h-3.5 text-primary-600" />
+                Unduh Gambar Lambang Garuda untuk Meja Kelas
+              </a>
+            </div>
           </div>
         </div>
       )}
@@ -82,9 +92,9 @@ export default function NativeModelViewer() {
               {/* Native AR Button inside model-viewer */}
               <button
                 slot="ar-button"
-                className="absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black text-sm shadow-2xl hover:scale-105 active:scale-95 transition-transform flex items-center gap-2 border-2 border-white/60"
+                className="absolute bottom-5 left-1/2 -translate-x-1/2 px-5 py-3 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm shadow-[0_4px_20px_rgba(251,191,36,0.6)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 border-2 border-amber-300 cursor-pointer"
               >
-                <Smartphone className="w-4 h-4 text-slate-950" />
+                <Smartphone className="w-4 h-4 text-slate-950 stroke-[2.5]" />
                 Lihat di Ruangan Nyata (AR HP)
               </button>
             {/* @ts-ignore */}
@@ -111,7 +121,7 @@ export default function NativeModelViewer() {
           </div>
         </div>
 
-        {/* Technical Explanations for Thesis Defense (Dosen & Mahasiswa) */}
+        {/* Technical Explanations for Students & Teachers */}
         <div className="lg:col-span-5 flex flex-col gap-4">
           <div className="p-5 rounded-2xl bg-slate-50 border border-gray-200">
             <h4 className="text-sm font-bold text-gray-900 mb-2 flex items-center gap-2">
@@ -142,11 +152,11 @@ export default function NativeModelViewer() {
 
           <div className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200/80">
             <h4 className="text-sm font-bold text-amber-900 mb-2 flex items-center gap-2">
-              <HelpCircle className="w-4 h-4 text-amber-600" />
-              Poin Penting untuk Sidang Tugas Akhir
+              <Sparkles className="w-4 h-4 text-amber-600" />
+              Manfaat Pembelajaran Interaktif Siswa
             </h4>
             <p className="text-xs text-amber-900/80 leading-relaxed">
-              Fitur ini membuktikan bahwa website sekolah tidak hanya memuat teks statis, melainkan bertindak sebagai <strong>Laboratorium Virtual (Media Pembelajaran Imersif)</strong> yang menghemat anggaran sekolah karena tidak memerlukan kacamata VR/AR mahal.
+              Media Augmented Reality ini memberikan pengalaman visual nyata bagi siswa SDN Pakis V Surabaya. Siswa dapat mengamati struktur lambang negara dari jarak dekat di atas meja belajar, memperkuat pemahaman nilai-nilai Pancasila secara menyenangkan.
             </p>
           </div>
         </div>

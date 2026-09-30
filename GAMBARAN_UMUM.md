@@ -401,7 +401,7 @@ Seluruh konten website dipecah menjadi 8 file komponen halaman yang independen:
    * Menampilkan grid 23 sarana prasarana sekolah lengkap dengan ikon khusus dan jumlah unitnya.
 
 3. **`MediaAR.jsx` (Inovasi Media Pembelajaran WebAR: Garuda Pancasila):**
-   * **Fitur Utama Unggulan Sidang Skripsi:** Media pembelajaran imersif Kurikulum Merdeka (P5) tanpa perlu download aplikasi dari PlayStore/AppStore.
+   * **Inovasi Pendidikan Digital Sekolah:** Media pembelajaran imersif Kurikulum Merdeka (P5) tanpa perlu download aplikasi dari PlayStore/AppStore.
    * **4 Mode Interaktif:**
      1. *Eksplorasi 3D & Suara*: Membedah makna 5 sila dan filosofi kemerdekaan 17-8-1945 dilengkapi teknologi *Text-to-Speech* narasi suara bahasa Indonesia.
      2. *Kamera WebAR Interaktif*: Menggunakan kamera laptop/HP untuk memproyeksikan lambang Garuda di meja siswa dengan kontrol geser, putar, perbesar/perkecil, efek kilau emas, dan tombol foto bersama AR (*snapshot watermark*).

@@ -35,7 +35,7 @@ export default function MediaAR() {
       label: 'Native AR HP (ARCore/Kit)',
       sublabel: 'Letakkan Objek di Lantai/Meja',
       icon: Box,
-      badge: 'Scan QR',
+      badge: '3D Nyata',
       badgeColor: 'bg-blue-100 text-blue-800',
     },
     {

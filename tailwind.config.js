@@ -32,7 +32,6 @@ export default {
           900: '#7A4F09',
         },
         navy: '#1B4F72',
-        amber: '#E8A838',
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
