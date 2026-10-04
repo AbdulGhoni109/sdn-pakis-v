@@ -6,7 +6,7 @@
 
 ## DAFTAR ISI
 1. **Ringkasan Proyek & Tujuan Pembuatan Media**
-2. **Daftar Lengkap Teknologi: Definisi Umum (Bahasa Awam) & Fungsinya di Web**
+2. **Daftar Lengkap Teknologi: Definisi Formal, Analogi & Fungsi di Web**
 3. **Alur Kronologis Pembuatan: Apa Dulu yang Dibangun, Lalu Kelanjutannya Bagaimana?**
 4. **Cara Kerja Teknis Setiap Fitur AR (Di Balik Layar)**
 5. **Panduan Lengkap Penggunaan Fitur AR (Untuk Guru & Siswa di Kelas)**
@@ -20,15 +20,18 @@
 Proyek ini adalah pembuatan **Website Resmi Profil SDN Pakis V Surabaya** yang di dalamnya diintegrasikan sebuah modul inovasi khusus berupa **Media Pembelajaran Interaktif Berbasis WebAR (Web Augmented Reality)** dengan materi **Simbol & Lambang Negara Garuda Pancasila**.
 
 ### Mengapa Media Ini Dibuat?
-- **Masalah Pembelajaran Tradisional:** Di sekolah dasar, pembelajaran Pendidikan Pancasila materi lambang negara umumnya hanya mengandalkan buku paket teks atau gambar 2D datar di dinding. Siswa dituntut menghafal secara pasif tanpa melihat visual nyata.
-- **Karakteristik Siswa SD (Tahap Operasional Konkret):** Berdasarkan psikologi perkembangan anak, siswa usia sekolah dasar (7–12 tahun) sangat membutuhkan media pembelajaran yang visual, nyata, dan konkret agar materi tidak terasa abstrak dan membosankan.
-- **Solusi yang Dihadirkan:** Website ini menghadirkan replika patung 3D Garuda Pancasila yang bisa diputar 360 derajat, dilengkapi pembaca suara otomatis, serta dapat dimunculkan langsung ke dunia nyata (di atas meja belajar atau lantai kelas) menggunakan kamera HP/laptop siswa melalui teknologi Augmented Reality (AR) tanpa perlu mengunduh aplikasi tambahan dari PlayStore/AppStore.
+- **Masalah Pembelajaran Tradisional:** Pembelajaran materi simbol dan lambang negara di Sekolah Dasar umumnya mengandalkan media cetak 2 dimensi (2D) di buku paket atau poster dinding kelas yang bersifat statis dan pasif.
+- **Karakteristik Siswa SD (Tahap Operasional Konkret):** Menurut teori perkembangan kognitif Jean Piaget, siswa usia sekolah dasar (7–12 tahun) berada pada tahap *operasional konkret*. Mereka membutuhkan representasi visual yang nyata dan interaktif agar materi lambang negara tidak abstrak dan lebih mudah dipahami.
+- **Solusi yang Dihadirkan:** Website ini menghadirkan patung digital 3D Garuda Pancasila yang dapat diputar 360 derajat, dilengkapi pembaca suara narasi otomatis, serta dapat dimunculkan langsung ke dunia nyata (di atas meja belajar atau lantai kelas) menggunakan kamera HP/laptop siswa melalui teknologi Augmented Reality (AR) tanpa perlu mengunduh aplikasi dari PlayStore/AppStore.
 
 ---
 
-## 2. Daftar Lengkap Teknologi: Definisi Umum (Bahasa Awam) & Fungsinya di Web
+## 2. Daftar Lengkap Teknologi: Definisi Formal, Analogi & Fungsi di Web
 
-Agar siapa pun yang membaca dokumen ini (bahkan yang **sama sekali tidak mengerti teknologi**) bisa memahami dengan mudah, setiap teknologi dijelaskan dengan pola dua hal: **Definisi Umumnya dalam Bahasa Sehari-hari** dan **Fungsi Nyatanya di Website SDN Pakis V**.
+Setiap teknologi di bawah ini disusun dengan struktur standar:
+1. **Definisi:** Pengertian formal, teknis baku, dan to the point.
+2. **Analogi:** Perumpamaan sederhana kehidupan sehari-hari agar mudah dibayangkan.
+3. **Fungsi di Website Ini:** Tugas konkret teknologi tersebut pada website SDN Pakis V.
 
 ```text
 ====================================================================================
@@ -46,89 +49,107 @@ Agar siapa pun yang membaca dokumen ini (bahkan yang **sama sekali tidak mengert
 
 ### A. Teknologi Tampilan Website (Frontend)
 
-#### 1. Website (Bukan Aplikasi Unduhan)
-- **Definisi Umum (Bahasa Awam):** Halaman informasi digital di internet yang bisa langsung dibuka lewat aplikasi penjelajah (seperti Google Chrome atau Safari) cukup dengan mengklik tautan/link, tanpa perlu memasang (*install*) berkas apa pun ke memori HP.
-- **Fungsinya di Web Ini:** Siswa, guru, dan wali murid tidak perlu mengunduh aplikasi 100–200 MB dari PlayStore yang sering ditolak karena memori HP penuh. Cukup klik link atau scan Kode QR, media langsung siap digunakan detik itu juga.
+#### 1. Website (Aplikasi Berbasis Web)
+- **Definisi:** Sistem informasi atau aplikasi digital yang diakses melalui jaringan internet menggunakan peramban web (*web browser*) dengan protokol HTTP/HTTPS tanpa memerlukan proses instalasi berkas pada media penyimpanan perangkat pengguna.
+- **Analogi:** Seperti membaca surat kabar atau ensiklopedia daring; cukup dengan membuka alamat situsnya, seluruh isi informasi langsung tersaji tanpa perlu memasang aplikasi ke memori ponsel.
+- **Fungsi di Website Ini:** Siswa, guru, dan wali murid dapat langsung menggunakan media pembelajaran ini cukup dengan mengakses tautan URL atau memindai Kode QR tanpa dibebani keharusan mengunduh aplikasi sebesar ratusan megabyte dari PlayStore.
 
 #### 2. HTML5 (Hypertext Markup Language versi 5)
-- **Definisi Umum (Bahasa Awam):** Bahasa kerangka dasar atau "tulang punggung" sebuah halaman website. Ibarat membangun sebuah rumah, HTML adalah tiang-tiang fondasi, bata dinding, lantai, dan atapnya.
-- **Fungsinya di Web Ini:** Menentukan tempat dan susunan dasar teks judul, tulisan paragraf profil sekolah, posisi foto dewan guru, kotak video kamera, serta tombol-tombol navigasi.
+- **Definisi:** Bahasa markah standar industri yang digunakan untuk menyusun kerangka, hierarki struktural, dan konten dasar pada halaman web (seperti penataan teks, gambar, video, tombol, dan formulir).
+- **Analogi:** Seperti kerangka tulang pada tubuh manusia, atau pondasi tiang cor dan susunan bata pada bangunan gedung.
+- **Fungsi di Website Ini:** Membentuk susunan struktur halaman, mulai dari penempatan judul teks, paragraf profil sekolah, deretan foto guru, wadah video kamera, hingga kanvas area penampil model 3D.
 
-#### 3. CSS3 & Tailwind CSS
-- **Definisi Umum (Bahasa Awam):** Alat perias dan penata gaya tampilan website. Jika HTML adalah dinding rumah polos, maka CSS adalah cat warna, keramik, lampu hias, dan tata letak perabotannya. *Tailwind CSS* adalah kotak perkakas modern yang menyediakan ribuan pilihan warna dan gaya siap pakai.
-- **Fungsinya di Web Ini:** Memberikan warna khas sekolah (Biru Resmi dan Kuning Emas), membuat tulisan terlihat rapi dan elegan, mengatur animasi lembut saat halaman digeser, serta memastikan tampilan website otomatis menyesuaikan ukuran layar (*responsif*)—tetap rapi baik di layar HP kecil maupun di layar proyektor laptop guru.
+#### 3. CSS3 & Tailwind CSS (Cascading Style Sheets)
+- **Definisi:** CSS adalah bahasa lembar gaya (*stylesheet language*) yang digunakan untuk mengatur tampilan visual, format warna, tipografi, dan tata letak elemen pada halaman web yang ditulis dengan HTML. *Tailwind CSS* adalah kerangka kerja (*framework*) CSS berbasis kelas utilitas (*utility-first*) yang menyediakan pustaka aturan desain siap pakai untuk mempercepat pembuatan antarmuka modern yang responsif.
+- **Analogi:** Jika HTML adalah dinding bata polos, maka CSS adalah cat warna, keramik lantai, lampu dekorasi, dan penataan perabot ruangan agar indah dipandang.
+- **Fungsi di Website Ini:** Menerapkan warna identitas sekolah (Biru Resmi dan Kuning Emas), memastikan ukuran huruf mudah dibaca anak SD, mengatur efek transisi animasi, serta memastikan tampilan web otomatis menyesuaikan ukuran layar (*responsif*) baik di layar HP, tablet, maupun proyektor laptop.
 
 #### 4. JavaScript (JS ES6+)
-- **Definisi Umum (Bahasa Awam):** Bahasa pemrograman yang memberikan "nyawa" atau gerakan interaktif pada website. Jika HTML adalah tubuh dan CSS adalah pakaian, maka JavaScript adalah saraf dan otot yang membuat website bisa bergerak dan merespons tindakan manusia.
-- **Fungsinya di Web Ini:** Mengatur interaktivitas tombol—seperti menghitung nilai kuis saat siswa memilih jawaban, menyalakan kamera saat tombol ditekan, dan merespons sentuhan jari siswa saat menggeser lambang Garuda di layar HP.
+- **Definisi:** Bahasa pemrograman tingkat tinggi dan dinamis yang dieksekusi di sisi peramban (*client-side*) untuk menciptakan interaktivitas antarmuka, memproses logika data secara asinkron, dan merespons tindakan (*event*) pengguna secara langsung.
+- **Analogi:** Seperti sistem saraf dan jaringan otot yang membuat tubuh dapat bergerak, berpikir, dan bereaksi terhadap stimulus dari luar.
+- **Fungsi di Website Ini:** Mengatur seluruh interaktivitas sistem—seperti menghitung perolehan skor kuis, mengaktifkan akses kamera, memicu suara narasi audio, serta merespons sentuhan jari siswa saat memutar objek 3D dan menggeser lambang di layar.
 
 #### 5. React 19
-- **Definisi Umum (Bahasa Awam):** Alat pembuat tampilan website modern buatan Meta (Facebook) yang cara kerjanya seperti menyusun balok-balok mainan Lego (disebut *komponen*).
-- **Fungsinya di Web Ini:** Memecah website menjadi balok-balok terpisah yang mandiri (balok Profil, balok Berita, balok Eksplorasi 3D, balok Kamera AR, dan balok Kuis). Keuntungannya, jika kita ingin mengganti tulisan profil atau menambah soal kuis, kita cukup mencabut dan mengganti balok tersebut tanpa takut merusak bagian website lainnya.
+- **Definisi:** Pustaka (*library*) JavaScript berbasis sumber terbuka (*open-source*) yang dikembangkan oleh Meta (Facebook) untuk membangun antarmuka pengguna (*User Interface*) berbasis komponen modular yang reaktif terhadap perubahan data.
+- **Analogi:** Seperti teknik menyusun balok mainan Lego; setiap balok memiliki fungsinya tersendiri dan dapat dirakit, dibongkar, atau diperbaiki secara mandiri tanpa merusak konstruksi balok di sebelahnya.
+- **Fungsi di Website Ini:** Memecah website menjadi komponen-komponen mandiri (komponen Profil, Berita, Eksplorasi 3D, Kamera AR, dan Kuis). Hal ini membuat website sangat stabil dan memudahkan pengembang ketika ingin memperbarui konten tanpa mengganggu bagian halaman lain.
 
 #### 6. Vite
-- **Definisi Umum (Bahasa Awam):** Mesin perakit dan pengemas berkas website modern yang bertugas merapikan, memadatkan, dan mengecilkan ribuan baris kode program sebelum diterbitkan ke internet.
-- **Fungsinya di Web Ini:** Membuat website terbuka secepat kilat (dalam hitungan milidetik). Sangat berguna bagi siswa yang membuka website menggunakan smartphone dengan sinyal internet sekolah yang pas-pasan.
+- **Definisi:** Alat bantu pengembangan (*build tool & bundler*) web generasi baru yang mengompilasi dan mengemas kode program dengan arsitektur modul ES asli (*native ES modules*), menghasilkan waktu muat server lokal dan berkas produksi akhir yang sangat cepat dan efisien.
+- **Analogi:** Seperti mesin pengemas dan pengepres otomatis di pabrik modern yang merapikan ribuan barang produksi menjadi paket kecil yang ringkas dan siap didistribusikan dalam hitungan detik.
+- **Fungsi di Website Ini:** Mengompresi ribuan baris kode program dan aset grafis website agar dapat dimuat dalam hitungan milidetik saat diakses oleh siswa menggunakan koneksi internet sekolah.
 
-#### 7. Lucide React (Ikon Digital)
-- **Definisi Umum (Bahasa Awam):** Kumpulan gambar simbol atau lambang kecil (ikon digital) yang bersih, jelas, dan seragam.
-- **Fungsinya di Web Ini:** Menampilkan simbol-simbol ramah anak yang mudah dimengerti tanpa membaca teks panjang, seperti lambang kamera foto, lambang speaker suara, lambang putar 360°, lambang centang hijau kuis, dan lambang panah.
+#### 7. Lucide React (Pustaka Ikon Vektor)
+- **Definisi:** Pustaka komponen ikonografi vektor digital berbasis SVG (*Scalable Vector Graphics*) yang dirancang secara minimalis dan konsisten untuk kebutuhan antarmuka web modern.
+- **Analogi:** Seperti rambu-rambu visual lalu lintas yang memandu pengguna memahami arti suatu fungsi tanpa harus membaca petunjuk teks yang panjang.
+- **Fungsi di Website Ini:** Menyediakan simbol visual yang ramah anak pada setiap tombol penting, seperti ikon kamera foto, pengeras suara, tombol rotasi 360°, tanda centang benar pada kuis, serta tanda panah navigasi.
 
 ---
 
 ### B. Teknologi Pembuatan & Penampil 3D
 
 #### 1. Software Pemodelan 3D (Blender / 3D Modeling Tools)
-- **Definisi Umum (Bahasa Awam):** Perangkat lunak komputer yang berfungsi seperti meja pemahat digital untuk membuat patung atau benda tiga dimensi (3D) dari nol di dalam komputer.
-- **Fungsinya di Web Ini:** Digunakan untuk memahat dan mewarnai bentuk fisik burung Garuda Pancasila secara digital—mulai dari sayap, ekor, cakar pita Bhinneka Tunggal Ika, hingga perisai 5 sila di dada.
+- **Definisi:** Perangkat lunak aplikasi grafis komputer tiga dimensi yang digunakan untuk merancang, memahat geometri (*modeling*), memetakan tekstur (*texturing*), dan mengatur pencahayaan (*rendering*) objek visual digital.
+- **Analogi:** Seperti studio seni pemahat patung; tempat seniman membentuk patung dari tanah liat digital, mengukir lekukan sayap, dan mengoleskan cat warna emas hingga selesai.
+- **Fungsi di Website Ini:** Digunakan untuk memahat dan menyusun detail visual patung burung Garuda Pancasila—mencakup helai bulu sayap, ekor, cakar pita Bhinneka Tunggal Ika, serta perisai 5 sila di dada.
 
-#### 2. Format Berkas `.GLB` (glTF 2.0)
-- **Definisi Umum (Bahasa Awam):** Jenis berkas standar internasional khusus untuk patung atau objek 3D di internet. Ibarat format `.mp3` untuk rekaman lagu, atau `.mp4` untuk rekaman video.
-- **Fungsinya di Web Ini:** Menyimpan seluruh bentuk fisik, warna emas, dan tekstur patung burung Garuda ke dalam 1 file yang telah dikompresi menjadi sangat kecil (**hanya sekitar ~580 Kilobyte**, kurang dari 1 Megabyte) sehingga sangat hemat kuota siswa.
+#### 2. Format Berkas `.GLB` (glTF 2.0 / GL Transmission Format)
+- **Definisi:** Format berkas biner standar internasional yang dirancang oleh Khronos Group untuk transmisi dan pemuatan aset 3D yang sangat efisien di peramban web dengan mengompresi data geometri (*mesh*), tekstur, dan material ke dalam satu berkas terpadu.
+- **Analogi:** Seperti format file MP3 untuk rekaman musik atau MP4 untuk video; format standar yang paling ringkas, praktis, dan dapat dibuka di semua perangkat modern.
+- **Fungsi di Website Ini:** Menyimpan seluruh aset visual 3D patung Garuda ke dalam 1 berkas biner berukuran sangat kecil (**hanya ~580 Kilobyte**, di bawah 1 MB) sehingga sangat hemat kuota internet siswa dan tidak membuat HP panas.
 
 #### 3. Three.js
-- **Definisi Umum (Bahasa Awam):** Pustaka (*library*) grafis komputer yang bertugas menampilkan dan menggerakkan benda 3D di dalam halaman browser internet tanpa perlu memasang program tambahan.
-- **Fungsinya di Web Ini:** Mengatur tata cahaya lampu digital, bayangan patung, serta sudut pandang kamera 3D di browser sehingga patung Garuda terlihat bervolume nyata dan bisa diputar halus saat disentuh kursor mouse atau jari siswa.
+- **Definisi:** Pustaka grafis JavaScript tingkat tinggi yang memanfaatkan antarmuka pemrograman WebGL (*Web Graphics Library*) untuk merender adegan 3D interaktif yang terakselerasi oleh perangkat keras (*hardware-accelerated*) di dalam kanvas peramban web.
+- **Analogi:** Seperti sistem tata panggung, lampu sorot, dan kamera bioskop yang bertugas mengatur sudut pandang, pencahayaan, dan bayangan patung agar terlihat nyata di depan penonton.
+- **Fungsi di Website Ini:** Menghitung pencahayaan matematis, efek kemilau keemasan, dan proyeksi kamera 3D di layar sehingga patung Garuda dapat diputar 360 derajat secara halus oleh jari siswa.
 
 #### 4. Google `<model-viewer>`
-- **Definisi Umum (Bahasa Awam):** Komponen penampil 3D dan AR resmi buatan Google yang dirancang khusus untuk memunculkan benda 3D ke dunia nyata lewat browser smartphone.
-- **Fungsinya di Web Ini:** Menghubungkan website dengan sensor kamera dan sensor ruang di HP siswa (Google ARCore di Android dan Apple QuickLook di iPhone), sehingga patung Garuda 3D bisa "turun" dan berdiri tegak di lantai atau meja kelas nyata.
+- **Definisi:** Komponen web (*Web Component*) resmi dari Google yang mengimplementasikan standar WebXR untuk menampilkan model 3D di peramban web serta memfasilitasi peluncuran antarmuka Augmented Reality (AR) native pada perangkat bergerak (*mobile devices*).
+- **Analogi:** Seperti pintu penghubung resmi antara halaman website dengan sensor kamera dan sensor gerak yang ada di smartphone siswa.
+- **Fungsi di Website Ini:** Menghubungkan website dengan sistem AR bawaan ponsel (Google ARCore di Android dan Apple QuickLook di iPhone), memungkinkan patung 3D Garuda diproyeksikan langsung berdiri tegak di lantai atau meja kelas nyata.
 
 ---
 
 ### C. Teknologi Fitur Kamera & Augmented Reality (WebAR)
 
 #### 1. WebAR (Web Augmented Reality)
-- **Definisi Umum (Bahasa Awam):** Teknologi yang menggabungkan dunia nyata dengan benda digital 3D secara langsung melalui layar kamera browser web. Beda dengan Virtual Reality (VR) yang menutup mata pakai kacamata helm khusus, AR tetap memperlihatkan ruangan asli kita dan hanya menambahkan objek baru ke dalamnya.
-- **Fungsinya di Web Ini:** Membawa lambang burung Garuda Pancasila masuk ke ruang kelas SDN Pakis V, sehingga siswa seolah-olah melihat dan meletakkan lambang Garuda secara nyata di atas meja belajar mereka.
+- **Definisi:** Teknologi realitas tertambah (*Augmented Reality*) yang disajikan langsung melalui peramban web (*web browser*) menggunakan standar web terbuka tanpa mewajibkan pengguna mengunduh atau memasang aplikasi khusus dari toko aplikasi digital.
+- **Analogi:** Seperti efek filter kamera interaktif di media sosial, di mana objek digital ditumpangkan langsung ke atas rekaman video dunia nyata di sekitar kita.
+- **Fungsi di Website Ini:** Menghadirkan lambang burung Garuda Pancasila langsung ke lingkungan fisik siswa (di atas meja kelas atau lantai sekolah) sehingga siswa dapat berinteraksi secara visual konkret.
 
 #### 2. WebRTC & API Akses Kamera (`navigator.mediaDevices.getUserMedia`)
-- **Definisi Umum (Bahasa Awam):** Pintu izin resmi di browser yang meminta izin sopan kepada pemilik perangkat sebelum menyalakan kamera.
-- **Fungsinya di Web Ini:** Menyalakan kamera depan atau belakang HP/laptop siswa saat tombol *"Nyalakan Kamera AR"* ditekan. Video kamera hanya diproses langsung di layar HP siswa (tidak ada rekaman video yang dikirim atau disimpan ke server internet), sehingga 100% aman bagi privasi anak-anak.
+- **Definisi:** Spesifikasi antarmuka pemrograman JavaScript standar W3C yang memungkinkan halaman web meminta izin dan mengakses aliran data video (*video stream*) dari sensor perangkat keras kamera secara waktu nyata (*real-time*).
+- **Analogi:** Seperti pintu pengawas yang meminta izin resmi kepada pemilik rumah sebelum menyalakan kamera dokumentasi.
+- **Fungsi di Website Ini:** Mengaktifkan kamera depan atau belakang HP/laptop saat siswa mengklik tombol *"Nyalakan Kamera AR"*. Aliran video hanya diproses secara lokal di memori HP siswa (tidak ada video yang dikirim ke internet), sehingga 100% aman bagi privasi anak.
 
-#### 3. HTML5 `<canvas>` API (Mesin Penggabung Foto)
-- **Definisi Umum (Bahasa Awam):** Kanvas gambar tak terlihat di dalam browser yang berfungsi seperti kertas foto otomatis untuk menempelkan dan menggabungkan beberapa gambar menjadi satu.
-- **Fungsinya di Web Ini:** Saat siswa menekan tombol *"Foto Bersama AR"*, kanvas ini langsung menangkap rekaman video kamera ruangan dan menempelkan gambar Garuda di atasnya, lalu menyimpannya menjadi sebuah foto kenang-kenangan format PNG yang langsung terunduh ke galeri HP siswa.
+#### 3. HTML5 `<canvas>` API (Mesin Pengomposisi Foto)
+- **Definisi:** Elemen antarmuka pemrograman web yang menyediakan ruang bidang gambar berbasis piksel bitmap, memungkinkan manipulasi grafis dinamis, perataan gambar (*rendering*), dan ekspor data visual ke format gambar berkas biner.
+- **Analogi:** Seperti kertas cetak instan di dalam bilik foto (*photo booth*) yang merekatkan gambar latar belakang kamera dengan stiker lambang Garuda menjadi satu lembar foto cetak.
+- **Fungsi di Website Ini:** Menangkap rekaman video kamera ruangan dan menggabungkannya dengan lambang Garuda saat tombol *"Foto Bersama AR"* ditekan, lalu secara otomatis menyimpannya ke dalam bentuk file foto PNG di galeri HP siswa.
 
 ---
 
 ### D. Fitur Audio, Logika Kuis & Server Cloud
 
-#### 1. Web Speech API (Text-to-Speech Otomatis Bahasa Indonesia)
-- **Definisi Umum (Bahasa Awam):** Fitur pintar di dalam sistem operasi HP dan komputer yang mampu membaca tulisan teks biasa lalu mengubahnya menjadi suara ucapan manusia asli secara otomatis.
-- **Fungsinya di Web Ini:** Membacakan makna 5 sila dan contoh perilakunya dalam bahasa Indonesia (`id-ID`) dengan suara wanita yang ramah anak saat tombol speaker diklik. Sangat membantu siswa kelas rendah yang belum lancar membaca (gaya belajar auditori).
+#### 1. Web Speech API (`SpeechSynthesis` / Text-to-Speech)
+- **Definisi:** Antarmuka pemrograman standar peramban web yang memfasilitasi sintesis suara (*voice synthesis*), mengonversi teks data digital menjadi aliran audio ucapan manusia secara otomatis menggunakan basis data suara bawaan sistem operasi.
+- **Analogi:** Seperti narator buku audio yang membacakan naskah bacaan secara jelas kepada pendengar.
+- **Fungsi di Website Ini:** Membacakan teks filosofis makna 5 sila dan contoh penerapannya di sekolah menggunakan pelafalan bahasa Indonesia (`id-ID`) berintonasi ramah anak saat tombol speaker diklik, membantu siswa kelas rendah yang belum lancar membaca (gaya belajar auditori).
 
 #### 2. React State Management (`useState`, `useEffect`, `useRef`)
-- **Definisi Umum (Bahasa Awam):** Papan catatan memori internal di dalam website yang mengingat apa saja yang sedang dilakukan oleh pengguna saat itu juga.
-- **Fungsinya di Web Ini:** Mencatat secara akurat tab mana yang sedang dibuka siswa, berapa soal kuis yang sudah dijawab, skor nilai akhir yang diraih, serta letak koordinat geser (*drag*) lambang Garuda di meja.
+- **Definisi:** Mekanisme internal React untuk mengelola, melacak, dan memperbarui status kondisi data dinamis aplikasi, serta memicu pembaruan rendering visual antarmuka secara otomatis saat terjadi perubahan data.
+- **Analogi:** Seperti buku catatan memori otomatis dan papan skor digital yang langsung memperbarui catatan nilai pertandingan tanpa ada data yang terlupakan.
+- **Fungsi di Website Ini:** Menyimpan posisi tab yang sedang aktif, melacak koordinat pergeseran (*drag*) lambang Garuda di meja belajar, menghitung jumlah soal yang telah dijawab, serta mengkalkulasi skor akhir kuis secara langsung.
 
 #### 3. Git & GitHub
-- **Definisi Umum (Bahasa Awam):** Lemari arsip digital di internet tempat menyimpan seluruh naskah kode program proyek secara rapi dan aman, lengkap dengan catatan tanggal pembuatannya.
-- **Fungsinya di Web Ini:** Menyimpan repositori proyek resmi (`AbdulGhoni109/sdn-pakis-v`) agar berkas tidak hilang dan dapat diperbarui kapan saja.
+- **Definisi:** Git adalah sistem pengontrol versi (*Version Control System*) terdistribusi untuk mencatat riwayat perubahan kode sumber. GitHub adalah platform berbasis cloud yang menyediakan layanan penyimpanan repositori Git terpusat serta kolaborasi pengelolaan kode perangkat lunak.
+- **Analogi:** Seperti lemari brankas digital dengan fasilitas mesin waktu yang mencatat setiap revisi berkas dokumen secara terperinci sehingga naskah proyek tersimpan aman dan tidak akan hilang.
+- **Fungsi di Website Ini:** Menyimpan seluruh kode sumber proyek (`AbdulGhoni109/sdn-pakis-v`) secara aman dan menghubungkannya secara otomatis ke sistem penerbitan cloud.
 
-#### 4. Netlify Cloud Hosting
-- **Definisi Umum (Bahasa Awam):** Komputer peladen (*server*) raksasa di internet (cloud) yang bertugas menyiarkan website selama 24 jam sehari tanpa henti ke seluruh penjuru dunia.
-- **Fungsinya di Web Ini:** Menyediakan tautan resmi website SDN Pakis V berkeamanan gembok hijau (**HTTPS**) yang bisa diakses gratis oleh guru, siswa, dan masyarakat luas kapan pun. Layanan ini **100% bebas biaya (Rp 0 selamanya)** tanpa biaya bulanan bagi sekolah.
+#### 4. Netlify Cloud Hosting & Deployment
+- **Definisi:** Platform komputasi awan (*cloud computing platform*) yang menyediakan infrastruktur hosting berbasis jaringan terdistribusi (*Edge Content Delivery Network*), otomatisasi kompilasi kode (*Continuous Deployment*), serta manajemen sertifikat keamanan SSL/TLS untuk aplikasi web modern.
+- **Analogi:** Seperti percetakan dan jaringan stasiun pemancar berita yang secara otomatis menyiarkan edisi terbaru majalah ke seluruh cabang perpustakaan di dunia setiap kali ada naskah yang baru selesai ditulis.
+- **Fungsi di Website Ini:** Menyiarkan website resmi SDN Pakis V selama 24 jam sehari dengan alamat web berkeamanan sertifikat gembok hijau (**HTTPS**) secara gratis (biaya pemeliharaan Rp 0 selamanya).
 
 ---
 
@@ -260,7 +281,7 @@ TAHAP 9: Peluncuran ke Internet Melalui GitHub & Netlify (Deploy)
 
 ## 5. Panduan Lengkap Penggunaan Fitur AR (Untuk Guru & Siswa di Kelas)
 
-Berikut adalah panduan langkah demi langkah saat memanfaatkan menu **Media AR** dalam kegiatan belajar-mengajar di kelas:
+Berikut adalah panduan operasional langkah demi langkah saat memanfaatkan menu **Media AR** dalam kegiatan belajar-mengajar di kelas:
 
 ### Mode 1: Eksplorasi 3D & Suara
 - **Tujuan Pembelajaran:** Mengamati bentuk fisik lambang negara secara menyeluruh dari segala sisi dan mendengarkan penjelasan audio.
@@ -270,7 +291,7 @@ Berikut adalah panduan langkah demi langkah saat memanfaatkan menu **Media AR** 
   3. Klik salah satu dari 5 lambang sila di bagian bawah layar (Bintang, Rantai, Beringin, Banteng, Padi & Kapas).
   4. Baca makna lambang dan contoh pengamalannya di lingkungan sekolah.
   5. Tekan tombol speaker **"Dengarkan Narasi Suara"** agar website membacakan penjelasan materi dengan suara ramah anak secara otomatis.
-  6. Klik tab **"Anatomi 17-8-1945"** untuk mempelajari rahasia jumlah bulu sayap, ekor, dan leher burung Garuda.
+  6. Klik tab **"Anatomi 17-8-1945"** untuk mempelajari rahasia jumlah bulu kemerdekaan pada sayap, ekor, dan leher burung Garuda.
 
 ---
 

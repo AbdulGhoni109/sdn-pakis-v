@@ -149,11 +149,14 @@
     }
 
     h4 {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--primary);
-      margin-top: 14px;
-      margin-bottom: 6px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     p {
@@ -178,18 +181,9 @@
       background: #FFFFFF;
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 18px 20px;
-      margin-bottom: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.02);
-    }
-
-    .tech-card h4 {
-      margin-top: 0;
-      color: var(--primary);
-      font-size: 15px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
 
     .tech-tag {
@@ -201,18 +195,28 @@
       border-radius: 6px;
     }
 
-    .def-label {
-      display: inline-block;
+    .tech-row {
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .tech-label {
       font-weight: 700;
+      display: inline-block;
+      min-width: 140px;
+    }
+
+    .def-label {
       color: #0F172A;
-      margin-top: 4px;
+    }
+
+    .analogy-label {
+      color: #B45309;
     }
 
     .func-label {
-      display: inline-block;
-      font-weight: 700;
       color: var(--primary);
-      margin-top: 8px;
     }
 
     table {
@@ -379,20 +383,23 @@
     <div class="highlight-card">
       <strong>🎯 Latar Belakang & Masalah Nyata:</strong>
       <p style="margin-top: 6px; margin-bottom: 0;">
-        Selama ini pembelajaran materi lambang negara di Sekolah Dasar umumnya menggunakan gambar dua dimensi (2D) di buku paket atau poster dinding kelas yang bersifat pasif. Menurut psikologi perkembangan anak, siswa usia sekolah dasar (7–12 tahun) berada pada tahap <em>operasional konkret</em>. Mereka membutuhkan alat peraga nyata dan interaktif agar materi tidak abstrak dan lebih cepat dipahami.
+        Pembelajaran materi lambang negara di Sekolah Dasar umumnya mengandalkan media cetak 2 dimensi (2D) di buku paket atau poster dinding kelas yang bersifat statis dan pasif. Menurut teori perkembangan kognitif Jean Piaget, siswa usia sekolah dasar (7–12 tahun) berada pada tahap <em>operasional konkret</em>. Mereka membutuhkan representasi visual yang nyata dan interaktif agar materi lambang negara tidak abstrak dan lebih mudah dipahami.
       </p>
     </div>
 
     <p>
       <strong>Solusi yang dihadirkan di website ini:</strong>
-      Website ini menghadirkan replika patung 3D Garuda Pancasila yang dapat diputar 360 derajat, dilengkapi pembaca suara otomatis, serta dapat dimunculkan langsung ke dunia nyata melalui kamera HP atau laptop siswa tanpa perlu mengunduh aplikasi dari PlayStore/AppStore.
+      Website ini menghadirkan patung digital 3D Garuda Pancasila yang dapat diputar 360 derajat, dilengkapi pembaca suara narasi otomatis, serta dapat dimunculkan langsung ke dunia nyata melalui kamera HP atau laptop siswa tanpa perlu mengunduh aplikasi dari PlayStore/AppStore.
     </p>
 
     <!-- BAB 2 -->
     <div class="page-break"></div>
-    <h2><span class="num">2</span> Daftar Lengkap Teknologi: Definisi Umum (Bahasa Awam) & Fungsinya di Web</h2>
+    <h2><span class="num">2</span> Daftar Lengkap Teknologi: Definisi Formal, Analogi & Fungsi di Web</h2>
     <p>
-      Agar siapa pun yang membaca dokumen ini (bahkan yang <strong>sama sekali tidak mengerti teknologi</strong>) bisa memahami dengan mudah, setiap teknologi dijelaskan dengan pola dua hal: <strong>Definisi Umumnya dalam Bahasa Sehari-hari</strong> dan <strong>Fungsi Nyatanya di Website SDN Pakis V</strong>.
+      Setiap teknologi di bawah ini disusun dengan struktur standar:
+      <br><strong>1. Definisi:</strong> Pengertian formal, teknis baku, dan to the point.
+      <br><strong>2. Analogi:</strong> Perumpamaan sederhana kehidupan sehari-hari agar mudah dibayangkan.
+      <br><strong>3. Fungsi di Website Ini:</strong> Tugas konkret teknologi tersebut pada website SDN Pakis V.
     </p>
 
     <div class="code-diagram">====================================================================================
@@ -408,153 +415,297 @@
     <h3 style="color: var(--primary); margin-top: 24px;">A. Teknologi Tampilan Website (Frontend)</h3>
 
     <div class="tech-card">
-      <h4>1. Website (Bukan Aplikasi Unduhan) <span class="tech-tag">Arsitektur</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Halaman informasi digital di internet yang bisa langsung dibuka lewat aplikasi penjelajah (seperti Google Chrome atau Safari) cukup dengan mengklik tautan/link, tanpa perlu memasang (<em>install</em>) berkas apa pun ke memori HP.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Siswa, guru, dan wali murid tidak perlu mengunduh aplikasi 100–200 MB dari PlayStore yang sering ditolak karena memori HP penuh. Cukup klik link atau scan Kode QR, media langsung siap digunakan detik itu juga.
-      </p>
+      <h4>1. Website (Aplikasi Berbasis Web) <span class="tech-tag">Arsitektur</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Sistem informasi atau aplikasi digital yang diakses melalui jaringan internet menggunakan peramban web (<em>web browser</em>) dengan protokol HTTP/HTTPS tanpa memerlukan proses instalasi berkas pada media penyimpanan perangkat pengguna.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti membaca surat kabar atau ensiklopedia daring; cukup dengan membuka alamat situsnya, seluruh isi informasi langsung tersaji tanpa perlu memasang aplikasi ke memori ponsel.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Siswa, guru, dan wali murid dapat langsung menggunakan media pembelajaran ini cukup dengan mengakses tautan URL atau memindai Kode QR tanpa dibebani keharusan mengunduh aplikasi sebesar ratusan megabyte dari PlayStore.
+      </div>
     </div>
 
     <div class="tech-card">
       <h4>2. HTML5 (Hypertext Markup Language versi 5) <span class="tech-tag">Kerangka Dasar</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Bahasa kerangka dasar atau "tulang punggung" sebuah halaman website. Ibarat membangun sebuah rumah, HTML adalah tiang-tiang fondasi, bata dinding, lantai, dan atapnya.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menentukan tempat dan susunan dasar teks judul, tulisan paragraf profil sekolah, posisi foto dewan guru, kotak video kamera, serta tombol-tombol navigasi.
-      </p>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Bahasa markah standar industri yang digunakan untuk menyusun kerangka, hierarki struktural, dan konten dasar pada halaman web (seperti penataan teks, gambar, video, tombol, dan formulir).
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti kerangka tulang pada tubuh manusia, atau pondasi tiang cor dan susunan bata pada bangunan gedung.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Membentuk susunan struktur halaman, mulai dari penempatan judul teks, paragraf profil sekolah, deretan foto guru, wadah video kamera, hingga kanvas area penampil model 3D.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>3. CSS3 & Tailwind CSS <span class="tech-tag">Sistem Desain & Tata Letak</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Alat perias dan penata gaya tampilan website. Jika HTML adalah dinding rumah polos, maka CSS adalah cat warna, keramik, lampu hias, dan tata letak perabotannya. <em>Tailwind CSS</em> adalah kotak perkakas modern yang menyediakan ribuan pilihan warna dan gaya siap pakai.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Memberikan warna khas sekolah (Biru Resmi dan Kuning Emas), membuat tulisan terlihat rapi dan elegan, mengatur animasi lembut saat halaman digeser, serta memastikan tampilan website otomatis menyesuaikan ukuran layar (<em>responsif</em>)—tetap rapi baik di layar HP kecil maupun di layar proyektor laptop guru.
-      </p>
+      <h4>3. CSS3 & Tailwind CSS (Cascading Style Sheets) <span class="tech-tag">Sistem Desain & Tata Letak</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        CSS adalah bahasa lembar gaya (<em>stylesheet language</em>) yang digunakan untuk mengatur tampilan visual, format warna, tipografi, dan tata letak elemen pada halaman web yang ditulis dengan HTML. <em>Tailwind CSS</em> adalah kerangka kerja (<em>framework</em>) CSS berbasis kelas utilitas yang menyediakan pustaka aturan desain siap pakai untuk mempercepat pembuatan antarmuka modern yang responsif.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Jika HTML adalah dinding bata polos, maka CSS adalah cat warna, keramik lantai, lampu dekorasi, dan penataan perabot ruangan agar indah dipandang.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menerapkan warna identitas sekolah (Biru Resmi dan Kuning Emas), memastikan ukuran huruf mudah dibaca anak SD, mengatur efek transisi animasi, serta memastikan tampilan web otomatis menyesuaikan ukuran layar (<em>responsif</em>) baik di layar HP, tablet, maupun proyektor laptop.
+      </div>
     </div>
 
     <div class="tech-card">
       <h4>4. JavaScript (JS ES6+) <span class="tech-tag">Logika Pemrograman</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Bahasa pemrograman yang memberikan "nyawa" atau gerakan interaktif pada website. Jika HTML adalah tubuh dan CSS adalah pakaian, maka JavaScript adalah saraf dan otot yang membuat website bisa bergerak dan merespons tindakan manusia.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Mengatur interaktivitas tombol—seperti menghitung nilai kuis saat siswa memilih jawaban, menyalakan kamera saat tombol ditekan, dan merespons sentuhan jari siswa saat menggeser lambang Garuda di layar HP.
-      </p>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Bahasa pemrograman tingkat tinggi dan dinamis yang dieksekusi di sisi peramban (<em>client-side</em>) untuk menciptakan interaktivitas antarmuka, memproses logika data secara asinkron, dan merespons tindakan (<em>event</em>) pengguna secara langsung.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti sistem saraf dan jaringan otot yang membuat tubuh dapat bergerak, berpikir, dan bereaksi terhadap stimulus dari luar.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Mengatur seluruh interaktivitas sistem—seperti menghitung perolehan skor kuis, mengaktifkan akses kamera, memicu suara narasi audio, serta merespons sentuhan jari siswa saat memutar objek 3D dan menggeser lambang di layar.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>5. React 19 <span class="tech-tag">Pondasi Tampilan Berbasis Lego</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Alat pembuat tampilan website modern buatan Meta (Facebook) yang cara kerjanya seperti menyusun balok-balok mainan Lego (disebut <em>komponen</em>).<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Memecah website menjadi balok-balok terpisah yang mandiri (balok Profil, balok Berita, balok Eksplorasi 3D, balok Kamera AR, dan balok Kuis). Keuntungannya, jika kita ingin mengganti tulisan profil atau menambah soal kuis, kita cukup mencabut dan mengganti balok tersebut tanpa takut merusak bagian website lainnya.
-      </p>
+      <h4>5. React 19 <span class="tech-tag">Pondasi Tampilan Berbasis Komponen</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Pustaka (<em>library</em>) JavaScript berbasis sumber terbuka yang dikembangkan oleh Meta (Facebook) untuk membangun antarmuka pengguna (<em>User Interface</em>) berbasis komponen modular yang reaktif terhadap perubahan data.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti teknik menyusun balok mainan Lego; setiap balok memiliki fungsinya tersendiri dan dapat dirakit, dibongkar, atau diperbaiki secara mandiri tanpa merusak konstruksi balok di sebelahnya.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Membagi website menjadi komponen-komponen mandiri (komponen Profil, Berita, Eksplorasi 3D, Kamera AR, dan Kuis). Hal ini membuat website sangat stabil dan memudahkan pengembang ketika ingin memperbarui konten tanpa mengganggu bagian halaman lain.
+      </div>
     </div>
 
     <div class="tech-card">
       <h4>6. Vite <span class="tech-tag">Mesin Perakit Kilat</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Mesin perakit dan pengemas berkas website modern yang bertugas merapikan, memadatkan, dan mengecilkan ribuan baris kode program sebelum diterbitkan ke internet.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Membuat website terbuka secepat kilat (dalam hitungan milidetik). Sangat berguna bagi siswa yang membuka website menggunakan smartphone dengan sinyal internet sekolah yang pas-pasan.
-      </p>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Alat bantu pengembangan (<em>build tool & bundler</em>) web generasi baru yang mengompilasi dan mengemas kode program dengan arsitektur modul ES asli (<em>native ES modules</em>), menghasilkan waktu muat server lokal dan berkas produksi akhir yang sangat cepat dan efisien.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti mesin pengemas dan pengepres otomatis di pabrik modern yang merapikan ribuan barang produksi menjadi paket kecil yang ringkas dan siap didistribusikan dalam hitungan detik.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Mengompresi ribuan baris kode program dan aset grafis website agar dapat dimuat dalam hitungan milidetik saat diakses oleh siswa menggunakan koneksi internet sekolah.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>7. Lucide React (Ikon Digital) <span class="tech-tag">Ikonografi Visual</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Kumpulan gambar simbol atau lambang kecil (ikon digital) yang bersih, jelas, dan seragam.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menampilkan simbol-simbol ramah anak yang mudah dimengerti tanpa membaca teks panjang, seperti lambang kamera foto, lambang speaker suara, lambang putar 360°, lambang centang hijau kuis, dan lambang panah.
-      </p>
+      <h4>7. Lucide React (Pustaka Ikon Vektor) <span class="tech-tag">Ikonografi Visual</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Pustaka komponen ikonografi vektor digital berbasis SVG (<em>Scalable Vector Graphics</em>) yang dirancang secara minimalis dan konsisten untuk kebutuhan antarmuka web modern.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti rambu-rambu visual lalu lintas yang memandu pengguna memahami arti suatu fungsi tanpa harus membaca petunjuk teks yang panjang.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menyediakan simbol visual yang ramah anak pada setiap tombol penting, seperti ikon kamera foto, pengeras suara, tombol rotasi 360°, tanda centang benar pada kuis, serta tanda panah navigasi.
+      </div>
     </div>
 
     <h3 style="color: var(--primary); margin-top: 24px;">B. Teknologi Pembuatan & Penampil 3D</h3>
 
     <div class="tech-card">
-      <h4>1. Software Pemodelan 3D (Blender) <span class="tech-tag">Pahat Digital</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Perangkat lunak komputer yang berfungsi seperti meja pemahat digital untuk membuat patung atau benda tiga dimensi (3D) dari nol di dalam komputer.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Digunakan untuk memahat dan mewarnai bentuk fisik burung Garuda Pancasila secara digital—mulai dari sayap, ekor, cakar pita Bhinneka Tunggal Ika, hingga perisai 5 sila di dada.
-      </p>
+      <h4>1. Software Pemodelan 3D (Blender) <span class="tech-tag">Pemodelan Digital</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Perangkat lunak aplikasi grafis komputer tiga dimensi yang digunakan untuk merancang, memahat geometri (<em>modeling</em>), memetakan tekstur (<em>texturing</em>), dan mengatur pencahayaan (<em>rendering</em>) objek visual digital.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti studio seni pemahat patung; tempat seniman membentuk patung dari tanah liat digital, mengukir lekukan sayap, dan mengoleskan cat warna emas hingga selesai.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Digunakan untuk memahat dan menyusun detail visual patung burung Garuda Pancasila—mencakup helai bulu sayap, ekor, cakar pita Bhinneka Tunggal Ika, serta perisai 5 sila di dada.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>2. Format Berkas .GLB (glTF 2.0) <span class="tech-tag">Standar Patung Digital</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Jenis berkas standar internasional khusus untuk patung atau objek 3D di internet. Ibarat format <code>.mp3</code> untuk rekaman lagu, atau <code>.mp4</code> untuk rekaman video.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyimpan seluruh bentuk fisik, warna emas, dan tekstur patung burung Garuda ke dalam 1 file yang telah dikompresi menjadi sangat kecil (<strong>hanya sekitar ~580 Kilobyte</strong>, kurang dari 1 Megabyte) sehingga sangat hemat kuota siswa.
-      </p>
+      <h4>2. Format Berkas .GLB (glTF 2.0 / GL Transmission Format) <span class="tech-tag">Standar Patung Digital</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Format berkas biner standar internasional yang dirancang oleh Khronos Group untuk transmisi dan pemuatan aset 3D yang sangat efisien di peramban web dengan mengompresi data geometri (<em>mesh</em>), tekstur, dan material ke dalam satu berkas terpadu.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti format file MP3 untuk rekaman musik atau MP4 untuk video; format standar yang paling ringkas, praktis, dan dapat dibuka di semua perangkat modern.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menyimpan seluruh aset visual 3D patung Garuda ke dalam 1 berkas biner berukuran sangat kecil (<strong>hanya ~580 Kilobyte</strong>, di bawah 1 MB) sehingga sangat hemat kuota internet siswa dan tidak membuat HP panas.
+      </div>
     </div>
 
     <div class="tech-card">
       <h4>3. Three.js <span class="tech-tag">Mesin Grafis 3D Web</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Pustaka (<em>library</em>) grafis komputer yang bertugas menampilkan dan menggerakkan benda 3D di dalam halaman browser internet tanpa perlu memasang program tambahan.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Mengatur tata cahaya lampu digital, bayangan patung, serta sudut pandang kamera 3D di browser sehingga patung Garuda terlihat bervolume nyata dan bisa diputar halus saat disentuh kursor mouse atau jari siswa.
-      </p>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Pustaka grafis JavaScript tingkat tinggi yang memanfaatkan antarmuka pemrograman WebGL (<em>Web Graphics Library</em>) untuk merender adegan 3D interaktif yang terakselerasi oleh perangkat keras (<em>hardware-accelerated</em>) di dalam kanvas peramban web.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti sistem tata panggung, lampu sorot, dan kamera bioskop yang bertugas mengatur sudut pandang, pencahayaan, dan bayangan patung agar terlihat nyata di depan penonton.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menghitung pencahayaan matematis, efek kemilau keemasan, dan proyeksi kamera 3D di layar sehingga patung Garuda dapat diputar 360 derajat secara halus oleh jari siswa.
+      </div>
     </div>
 
     <div class="tech-card">
       <h4>4. Google &lt;model-viewer&gt; <span class="tech-tag">Penampil 3D/AR Resmi Google</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Komponen penampil 3D dan AR resmi buatan Google yang dirancang khusus untuk memunculkan benda 3D ke dunia nyata lewat browser smartphone.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menghubungkan website dengan sensor kamera dan sensor ruang di HP siswa (Google ARCore di Android dan Apple QuickLook di iPhone), sehingga patung Garuda 3D bisa "turun" dan berdiri tegak di lantai atau meja kelas nyata.
-      </p>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Komponen web (<em>Web Component</em>) resmi dari Google yang mengimplementasikan standar WebXR untuk menampilkan model 3D di peramban web serta memfasilitasi peluncuran antarmuka Augmented Reality (AR) native pada perangkat bergerak (<em>mobile devices</em>).
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti pintu penghubung resmi antara halaman website dengan sensor kamera dan sensor gerak yang ada di smartphone siswa.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menghubungkan website dengan sistem AR bawaan ponsel (Google ARCore di Android dan Apple QuickLook di iPhone), memungkinkan patung 3D Garuda diproyeksikan langsung berdiri tegak di lantai atau meja kelas nyata.
+      </div>
     </div>
 
     <h3 style="color: var(--primary); margin-top: 24px;">C. Teknologi Fitur Kamera & Augmented Reality (WebAR)</h3>
 
     <div class="tech-card">
       <h4>1. WebAR (Web Augmented Reality) <span class="tech-tag">Inti Inovasi</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Teknologi yang menggabungkan dunia nyata dengan benda digital 3D secara langsung melalui layar kamera browser web. Beda dengan Virtual Reality (VR) yang menutup mata pakai kacamata helm khusus, AR tetap memperlihatkan ruangan asli kita dan hanya menambahkan objek baru ke dalamnya.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Membawa lambang burung Garuda Pancasila masuk ke ruang kelas SDN Pakis V, sehingga siswa seolah-olah melihat dan meletakkan lambang Garuda secara nyata di atas meja belajar mereka.
-      </p>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Teknologi realitas tertambah (<em>Augmented Reality</em>) yang disajikan langsung melalui peramban web (<em>web browser</em>) menggunakan standar web terbuka tanpa mewajibkan pengguna mengunduh atau memasang aplikasi khusus dari toko aplikasi digital.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti efek filter kamera interaktif di media sosial, di mana objek digital ditumpangkan langsung ke atas rekaman video dunia nyata di sekitar kita.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menghadirkan lambang burung Garuda Pancasila langsung ke lingkungan fisik siswa (di atas meja kelas atau lantai sekolah) sehingga siswa dapat berinteraksi secara visual konkret.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>2. WebRTC & API Akses Kamera (`getUserMedia`) <span class="tech-tag">Pintu Izin Kamera</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Pintu izin resmi di browser yang meminta izin sopan kepada pemilik perangkat sebelum menyalakan kamera.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyalakan kamera depan atau belakang HP/laptop siswa saat tombol <em>"Nyalakan Kamera AR"</em> ditekan. Video kamera hanya diproses langsung di layar HP siswa (tidak ada rekaman video yang dikirim atau disimpan ke server internet), sehingga 100% aman bagi privasi anak-anak.
-      </p>
+      <h4>2. WebRTC & API Akses Kamera (`getUserMedia`) <span class="tech-tag">Akses Sensor Kamera</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Spesifikasi antarmuka pemrograman JavaScript standar W3C yang memungkinkan halaman web meminta izin dan mengakses aliran data video (<em>video stream</em>) dari sensor perangkat keras kamera secara waktu nyata (<em>real-time</em>).
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti pintu pengawas yang meminta izin resmi kepada pemilik rumah sebelum menyalakan kamera dokumentasi.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Mengaktifkan kamera depan atau belakang HP/laptop saat siswa mengklik tombol <em>"Nyalakan Kamera AR"</em>. Aliran video hanya diproses secara lokal di memori HP siswa (tidak ada video yang dikirim ke internet), sehingga 100% aman bagi privasi anak.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>3. HTML5 &lt;canvas&gt; API (Mesin Penggabung Foto) <span class="tech-tag">Kertas Foto Digital</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Kanvas gambar tak terlihat di dalam browser yang berfungsi seperti kertas foto otomatis untuk menempelkan dan menggabungkan beberapa gambar menjadi satu.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Saat siswa menekan tombol <em>"Foto Bersama AR"</em>, kanvas ini langsung menangkap rekaman video kamera ruangan dan menempelkan gambar Garuda di atasnya, lalu menyimpannya menjadi sebuah foto kenang-kenangan format PNG yang langsung terunduh ke galeri HP siswa.
-      </p>
+      <h4>3. HTML5 &lt;canvas&gt; API <span class="tech-tag">Mesin Pengomposisi Foto</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Elemen antarmuka pemrograman web yang menyediakan ruang bidang gambar berbasis piksel bitmap, memungkinkan manipulasi grafis dinamis, perataan gambar (<em>rendering</em>), dan ekspor data visual ke format gambar berkas biner.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti kertas cetak instan di dalam bilik foto (<em>photo booth</em>) yang merekatkan gambar latar belakang kamera dengan stiker lambang Garuda menjadi satu lembar foto cetak.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menangkap rekaman video kamera ruangan dan menggabungkannya dengan lambang Garuda saat tombol <em>"Foto Bersama AR"</em> ditekan, lalu secara otomatis menyimpannya ke dalam bentuk file foto PNG di galeri HP siswa.
+      </div>
     </div>
 
     <h3 style="color: var(--primary); margin-top: 24px;">D. Fitur Audio, Logika Kuis & Server Cloud</h3>
 
     <div class="tech-card">
-      <h4>1. Web Speech API (Text-to-Speech Otomatis Bahasa Indonesia) <span class="tech-tag">Pembaca Suara Manusia</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Fitur pintar di dalam sistem operasi HP dan komputer yang mampu membaca tulisan teks biasa lalu mengubahnya menjadi suara ucapan manusia asli secara otomatis.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Membacakan makna 5 sila dan contoh perilakunya dalam bahasa Indonesia (<code>id-ID</code>) dengan suara wanita yang ramah anak saat tombol speaker diklik. Sangat membantu siswa kelas rendah yang belum lancar membaca (gaya belajar auditori).
-      </p>
+      <h4>1. Web Speech API (SpeechSynthesis / Text-to-Speech) <span class="tech-tag">Sintesis Suara</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Antarmuka pemrograman standar peramban web yang memfasilitasi sintesis suara (<em>voice synthesis</em>), mengonversi teks data digital menjadi aliran audio ucapan manusia secara otomatis menggunakan basis data suara bawaan sistem operasi.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti narator buku audio yang membacakan naskah bacaan secara jelas kepada pendengar.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Membacakan teks filosofis makna 5 sila dan contoh penerapannya di sekolah menggunakan pelafalan bahasa Indonesia (<code>id-ID</code>) berintonasi ramah anak saat tombol speaker diklik, membantu siswa kelas rendah yang belum lancar membaca (gaya belajar auditori).
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>2. React State Management <span class="tech-tag">Papan Catatan Memori</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Papan catatan memori internal di dalam website yang mengingat apa saja yang sedang dilakukan oleh pengguna saat itu juga.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Mencatat secara akurat tab mana yang sedang dibuka siswa, berapa soal kuis yang sudah dijawab, skor nilai akhir yang diraih, serta letak koordinat geser (<em>drag</em>) lambang Garuda di meja.
-      </p>
+      <h4>2. React State Management <span class="tech-tag">Pengelolaan Status Data</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Mekanisme internal React untuk mengelola, melacak, dan memperbarui status kondisi data dinamis aplikasi, serta memicu pembaruan rendering visual antarmuka secara otomatis saat terjadi perubahan data.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti buku catatan memori otomatis dan papan skor digital yang langsung memperbarui catatan nilai pertandingan tanpa ada data yang terlupakan.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menyimpan posisi tab yang sedang aktif, melacak koordinat pergeseran (<em>drag</em>) lambang Garuda di meja belajar, menghitung jumlah soal yang telah dijawab, serta mengkalkulasi skor akhir kuis secara langsung.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>3. Git & GitHub <span class="tech-tag">Brankas Kode Digital</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Lemari arsip digital di internet tempat menyimpan seluruh naskah kode program proyek secara rapi dan aman, lengkap dengan catatan tanggal pembuatannya.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyimpan repositori proyek resmi (<code>AbdulGhoni109/sdn-pakis-v</code>) agar berkas tidak hilang dan dapat diperbarui kapan saja.
-      </p>
+      <h4>3. Git & GitHub <span class="tech-tag">Repositori Kode</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Git adalah sistem pengontrol versi (<em>Version Control System</em>) terdistribusi untuk mencatat riwayat perubahan kode sumber. GitHub adalah platform berbasis cloud yang menyediakan layanan penyimpanan repositori Git terpusat serta kolaborasi pengelolaan kode perangkat lunak.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti lemari brankas digital dengan fasilitas mesin waktu yang mencatat setiap revisi berkas dokumen secara terperinci sehingga naskah proyek tersimpan aman dan tidak akan hilang.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menyimpan seluruh kode sumber proyek (<code>AbdulGhoni109/sdn-pakis-v</code>) secara aman dan menghubungkannya secara otomatis ke sistem penerbitan cloud.
+      </div>
     </div>
 
     <div class="tech-card">
-      <h4>4. Netlify Cloud Hosting <span class="tech-tag">Peladen Siar (Rp 0)</span></h4>
-      <p>
-        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Komputer peladen (<em>server</em>) raksasa di internet (cloud) yang bertugas menyiarkan website selama 24 jam sehari tanpa henti ke seluruh penjuru dunia.<br>
-        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyediakan tautan resmi website SDN Pakis V berkeamanan gembok hijau (<strong>HTTPS</strong>) yang bisa diakses gratis oleh guru, siswa, dan masyarakat luas kapan pun. Layanan ini <strong>100% bebas biaya (Rp 0 selamanya)</strong> tanpa biaya bulanan bagi sekolah.
-      </p>
+      <h4>4. Netlify Cloud Hosting & Deployment <span class="tech-tag">Infrastruktur Server (Rp 0)</span></h4>
+      <div class="tech-row">
+        <span class="tech-label def-label">📋 Definisi:</span>
+        Platform komputasi awan (<em>cloud computing platform</em>) yang menyediakan infrastruktur hosting berbasis jaringan terdistribusi (<em>Edge Content Delivery Network</em>), otomatisasi kompilasi kode (<em>Continuous Deployment</em>), serta manajemen sertifikat keamanan SSL/TLS untuk aplikasi web modern.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label analogy-label">💡 Analogi Sederhana:</span>
+        Seperti percetakan dan jaringan stasiun pemancar berita yang secara otomatis menyiarkan edisi terbaru majalah ke seluruh cabang perpustakaan di dunia setiap kali ada naskah yang baru selesai ditulis.
+      </div>
+      <div class="tech-row">
+        <span class="tech-label func-label">⚙️ Fungsi di Website Ini:</span>
+        Menyiarkan website resmi SDN Pakis V selama 24 jam sehari dengan alamat web berkeamanan sertifikat gembok hijau (<strong>HTTPS</strong>) secara gratis (biaya pemeliharaan Rp 0 selamanya).
+      </div>
     </div>
 
     <!-- BAB 3 -->
@@ -690,7 +841,7 @@
       <ul style="padding-left: 20px; font-size: 14px; margin-bottom: 16px;">
         <li>Buka menu <strong>"Media AR"</strong> lalu pilih tab <strong>"Eksplorasi 3D & Suara"</strong>.</li>
         <li>Gunakan jari di layar HP (atau kursor mouse di laptop) untuk memutar patung Garuda ke segala arah (360 derajat). Cubit layar dengan 2 jari untuk memperbesar objek (<em>zoom in</em>).</li>
-        <li>Klik salah satu dari 5 lambang sila di bawah patung (Bintang, Rantai, Beringin, Banteng, Padi & Kapas).</li>
+        <li>Klik salah satu dari 5 lambang sila di bagian bawah layar (Bintang, Rantai, Beringin, Banteng, Padi & Kapas).</li>
         <li>Baca makna lambang dan contoh pengamalannya di lingkungan sekolah.</li>
         <li>Klik tombol speaker <strong>"Dengarkan Narasi Suara"</strong> agar website membacakan penjelasan materi dengan suara ramah anak secara otomatis.</li>
         <li>Klik tab <strong>"Anatomi 17-8-1945"</strong> untuk mempelajari rahasia jumlah bulu kemerdekaan pada sayap, ekor, dan leher Garuda.</li>
