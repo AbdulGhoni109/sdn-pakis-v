@@ -201,6 +201,20 @@
       border-radius: 6px;
     }
 
+    .def-label {
+      display: inline-block;
+      font-weight: 700;
+      color: #0F172A;
+      margin-top: 4px;
+    }
+
+    .func-label {
+      display: inline-block;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 8px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -376,92 +390,110 @@
 
     <!-- BAB 2 -->
     <div class="page-break"></div>
-    <h2><span class="num">2</span> Daftar Lengkap Teknologi & Perangkat yang Digunakan (Alat & Bahan)</h2>
+    <h2><span class="num">2</span> Daftar Lengkap Teknologi: Definisi Umum (Bahasa Awam) & Fungsinya di Web</h2>
     <p>
-      Untuk menjawab pertanyaan <em>"Website dan AR-nya dibangun pakai apa saja?"</em>, berikut adalah rincian seluruh perangkat lunak, bahasa pemrograman, pustaka (<em>library</em>), dan teknologi yang digunakan beserta fungsinya masing-masing dalam bahasa yang mudah dipahami:
+      Agar siapa pun yang membaca dokumen ini (bahkan yang <strong>sama sekali tidak mengerti teknologi</strong>) bisa memahami dengan mudah, setiap teknologi dijelaskan dengan pola dua hal: <strong>Definisi Umumnya dalam Bahasa Sehari-hari</strong> dan <strong>Fungsi Nyatanya di Website SDN Pakis V</strong>.
     </p>
 
     <div class="code-diagram">====================================================================================
                         ARSITEKTUR TEKNOLOGI PROYEK
 ====================================================================================
-[ Antarmuka Web ]  --> React 19 + Vite + Tailwind CSS + Lucide Icons
-[ Pengolah 3D ]    --> Blender (Format .GLB / glTF 2.0) + Three.js + Model-Viewer
+[ Antarmuka Web ]  --> HTML5 + CSS3 + Tailwind CSS + JavaScript + React 19 + Vite
+[ Pengolah 3D ]    --> Blender (Format .GLB / glTF) + Three.js + Google Model-Viewer
 [ Kamera & AR ]    --> WebAR + WebRTC (getUserMedia API) + HTML5 Canvas
 [ Audio & Kuis ]   --> Web Speech API (Text-to-Speech) + React State Management
 [ Server & Cloud ] --> Node.js + Git + GitHub Repository + Netlify Cloud (HTTPS)
 ====================================================================================</div>
 
-    <h3 style="color: var(--primary); margin-top: 24px;">A. Perangkat Lunak & Bahasa Pemrograman Website (Frontend)</h3>
+    <h3 style="color: var(--primary); margin-top: 24px;">A. Teknologi Tampilan Website (Frontend)</h3>
 
     <div class="tech-card">
-      <h4>1. HTML5 (Hypertext Markup Language versi 5) <span class="tech-tag">Kerangka Dasar</span></h4>
+      <h4>1. Website (Bukan Aplikasi Unduhan) <span class="tech-tag">Arsitektur</span></h4>
       <p>
-        <strong>Fungsi:</strong> Menjadi kerangka dasar seluruh halaman web yang menentukan letak judul teks, foto profil sekolah, video kamera, tombol navigasi, dan kanvas tempat objek 3D ditampilkan.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Halaman informasi digital di internet yang bisa langsung dibuka lewat aplikasi penjelajah (seperti Google Chrome atau Safari) cukup dengan mengklik tautan/link, tanpa perlu memasang (<em>install</em>) berkas apa pun ke memori HP.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Siswa, guru, dan wali murid tidak perlu mengunduh aplikasi 100–200 MB dari PlayStore yang sering ditolak karena memori HP penuh. Cukup klik link atau scan Kode QR, media langsung siap digunakan detik itu juga.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>2. CSS3 & Tailwind CSS <span class="tech-tag">Sistem Desain & Tata Letak</span></h4>
+      <h4>2. HTML5 (Hypertext Markup Language versi 5) <span class="tech-tag">Kerangka Dasar</span></h4>
       <p>
-        <strong>Fungsi:</strong> Mengatur estetika tampilan website—mulai dari warna Biru Resmi (*Navy Blue*) dan Emas Kenegaraan (*Golden Amber*), ukuran tulisan, animasi transisi yang halus, hingga tata letak responsif (tampilan web otomatis menyesuaikan ukuran layar HP, tablet, maupun layar proyektor laptop guru).
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Bahasa kerangka dasar atau "tulang punggung" sebuah halaman website. Ibarat membangun sebuah rumah, HTML adalah tiang-tiang fondasi, bata dinding, lantai, dan atapnya.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menentukan tempat dan susunan dasar teks judul, tulisan paragraf profil sekolah, posisi foto dewan guru, kotak video kamera, serta tombol-tombol navigasi.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>3. JavaScript (ES6+) & JSX <span class="tech-tag">Logika Pemrograman</span></h4>
+      <h4>3. CSS3 & Tailwind CSS <span class="tech-tag">Sistem Desain & Tata Letak</span></h4>
       <p>
-        <strong>Fungsi:</strong> Bahasa pemrograman yang memberikan "otak" dan logika interaktivitas pada website. Mengatur agar tombol bisa diklik, menghitung skor kuis, mengaktifkan kamera, dan memutar patung 3D saat disentuh jari siswa.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Alat perias dan penata gaya tampilan website. Jika HTML adalah dinding rumah polos, maka CSS adalah cat warna, keramik, lampu hias, dan tata letak perabotannya. <em>Tailwind CSS</em> adalah kotak perkakas modern yang menyediakan ribuan pilihan warna dan gaya siap pakai.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Memberikan warna khas sekolah (Biru Resmi dan Kuning Emas), membuat tulisan terlihat rapi dan elegan, mengatur animasi lembut saat halaman digeser, serta memastikan tampilan website otomatis menyesuaikan ukuran layar (<em>responsif</em>)—tetap rapi baik di layar HP kecil maupun di layar proyektor laptop guru.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>4. React 19 <span class="tech-tag">Pondasi Tampilan Berbasis Komponen</span></h4>
+      <h4>4. JavaScript (JS ES6+) <span class="tech-tag">Logika Pemrograman</span></h4>
       <p>
-        <strong>Fungsi:</strong> Teknologi tampilan web modern buatan Meta (Facebook). Cara kerjanya seperti menyusun balok lego mandiri (<em>komponen</em>). Website dipecah menjadi komponen Profil, komponen Berita, komponen Kamera AR, komponen 3D Explorer, dan komponen Kuis. Jika ingin mengubah satu bagian, bagian lain tidak akan rusak.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Bahasa pemrograman yang memberikan "nyawa" atau gerakan interaktif pada website. Jika HTML adalah tubuh dan CSS adalah pakaian, maka JavaScript adalah saraf dan otot yang membuat website bisa bergerak dan merespons tindakan manusia.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Mengatur interaktivitas tombol—seperti menghitung nilai kuis saat siswa memilih jawaban, menyalakan kamera saat tombol ditekan, dan merespons sentuhan jari siswa saat menggeser lambang Garuda di layar HP.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>5. Vite <span class="tech-tag">Mesin Perakit Kilat</span></h4>
+      <h4>5. React 19 <span class="tech-tag">Pondasi Tampilan Berbasis Lego</span></h4>
       <p>
-        <strong>Fungsi:</strong> Alat pengemas kode generasi baru yang merapikan dan mengompresi ribuan baris kode menjadi berkas kecil siap tayang. Vite membuat website memuat halaman dalam hitungan milidetik sehingga sangat hemat kuota dan tidak lemot di HP siswa.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Alat pembuat tampilan website modern buatan Meta (Facebook) yang cara kerjanya seperti menyusun balok-balok mainan Lego (disebut <em>komponen</em>).<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Memecah website menjadi balok-balok terpisah yang mandiri (balok Profil, balok Berita, balok Eksplorasi 3D, balok Kamera AR, dan balok Kuis). Keuntungannya, jika kita ingin mengganti tulisan profil atau menambah soal kuis, kita cukup mencabut dan mengganti balok tersebut tanpa takut merusak bagian website lainnya.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>6. Lucide React <span class="tech-tag">Ikonografi Visual</span></h4>
+      <h4>6. Vite <span class="tech-tag">Mesin Perakit Kilat</span></h4>
       <p>
-        <strong>Fungsi:</strong> Menyediakan ikon-ikon interaktif yang ramah anak, seperti ikon kamera, speaker suara, rotasi putar, panah maju-mundur, centang hijau kuis, dan tombol reset.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Mesin perakit dan pengemas berkas website modern yang bertugas merapikan, memadatkan, dan mengecilkan ribuan baris kode program sebelum diterbitkan ke internet.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Membuat website terbuka secepat kilat (dalam hitungan milidetik). Sangat berguna bagi siswa yang membuka website menggunakan smartphone dengan sinyal internet sekolah yang pas-pasan.
+      </p>
+    </div>
+
+    <div class="tech-card">
+      <h4>7. Lucide React (Ikon Digital) <span class="tech-tag">Ikonografi Visual</span></h4>
+      <p>
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Kumpulan gambar simbol atau lambang kecil (ikon digital) yang bersih, jelas, dan seragam.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menampilkan simbol-simbol ramah anak yang mudah dimengerti tanpa membaca teks panjang, seperti lambang kamera foto, lambang speaker suara, lambang putar 360°, lambang centang hijau kuis, dan lambang panah.
       </p>
     </div>
 
     <h3 style="color: var(--primary); margin-top: 24px;">B. Teknologi Pembuatan & Penampil 3D</h3>
 
     <div class="tech-card">
-      <h4>1. Software Pemodelan 3D (Blender / 3D Modeling Tools) <span class="tech-tag">Desain 3D</span></h4>
+      <h4>1. Software Pemodelan 3D (Blender) <span class="tech-tag">Pahat Digital</span></h4>
       <p>
-        <strong>Fungsi:</strong> Software untuk membentuk geometri patung burung Garuda Pancasila secara digital—mulai dari sayap, ekor, cakar pita Bhinneka Tunggal Ika, hingga perisai 5 sila di dada.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Perangkat lunak komputer yang berfungsi seperti meja pemahat digital untuk membuat patung atau benda tiga dimensi (3D) dari nol di dalam komputer.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Digunakan untuk memahat dan mewarnai bentuk fisik burung Garuda Pancasila secara digital—mulai dari sayap, ekor, cakar pita Bhinneka Tunggal Ika, hingga perisai 5 sila di dada.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>2. Format Berkas .GLB (glTF 2.0) <span class="tech-tag">Aset 3D Standar Web</span></h4>
+      <h4>2. Format Berkas .GLB (glTF 2.0) <span class="tech-tag">Standar Patung Digital</span></h4>
       <p>
-        <strong>Fungsi:</strong> Format standar internasional untuk benda 3D di internet (seperti format MP3 untuk musik atau MP4 untuk video). File 3D Garuda dioptimalkan dan dikompresi hingga ukurannya sangat kecil, yaitu <strong>hanya ~580 KB</strong> (kurang dari 1 MB), sehingga sangat cepat diunduh meski sinyal internet di sekolah pas-pasan.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Jenis berkas standar internasional khusus untuk patung atau objek 3D di internet. Ibarat format <code>.mp3</code> untuk rekaman lagu, atau <code>.mp4</code> untuk rekaman video.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyimpan seluruh bentuk fisik, warna emas, dan tekstur patung burung Garuda ke dalam 1 file yang telah dikompresi menjadi sangat kecil (<strong>hanya sekitar ~580 Kilobyte</strong>, kurang dari 1 Megabyte) sehingga sangat hemat kuota siswa.
       </p>
     </div>
 
     <div class="tech-card">
       <h4>3. Three.js <span class="tech-tag">Mesin Grafis 3D Web</span></h4>
       <p>
-        <strong>Fungsi:</strong> Pustaka grafis JavaScript yang menghitung pencahayaan, bayangan, kedalaman ruang, dan sudut pandang kamera 3D di browser tanpa memerlukan komputer dengan kartu grafis (VGA) mahal.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Pustaka (<em>library</em>) grafis komputer yang bertugas menampilkan dan menggerakkan benda 3D di dalam halaman browser internet tanpa perlu memasang program tambahan.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Mengatur tata cahaya lampu digital, bayangan patung, serta sudut pandang kamera 3D di browser sehingga patung Garuda terlihat bervolume nyata dan bisa diputar halus saat disentuh kursor mouse atau jari siswa.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>4. Google &lt;model-viewer&gt; <span class="tech-tag">Web Component 3D/AR Resmi</span></h4>
+      <h4>4. Google &lt;model-viewer&gt; <span class="tech-tag">Penampil 3D/AR Resmi Google</span></h4>
       <p>
-        <strong>Fungsi:</strong> Komponen web resmi buatan Google yang memungkinkan browser menampilkan patung 3D secara interaktif sekaligus memicu sensor AR pada smartphone (mendukung teknologi Google ARCore di Android dan Apple Quick Look di iPhone).
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Komponen penampil 3D dan AR resmi buatan Google yang dirancang khusus untuk memunculkan benda 3D ke dunia nyata lewat browser smartphone.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menghubungkan website dengan sensor kamera dan sensor ruang di HP siswa (Google ARCore di Android dan Apple QuickLook di iPhone), sehingga patung Garuda 3D bisa "turun" dan berdiri tegak di lantai atau meja kelas nyata.
       </p>
     </div>
 
@@ -470,38 +502,58 @@
     <div class="tech-card">
       <h4>1. WebAR (Web Augmented Reality) <span class="tech-tag">Inti Inovasi</span></h4>
       <p>
-        <strong>Fungsi:</strong> Teknologi AR yang berjalan langsung di dalam browser web (Google Chrome atau Safari). Berbeda dengan AR lama yang mewajibkan pengguna mengunduh aplikasi 100–300 MB dari Google PlayStore, WebAR cukup dibuka lewat link URL website.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Teknologi yang menggabungkan dunia nyata dengan benda digital 3D secara langsung melalui layar kamera browser web. Beda dengan Virtual Reality (VR) yang menutup mata pakai kacamata helm khusus, AR tetap memperlihatkan ruangan asli kita dan hanya menambahkan objek baru ke dalamnya.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Membawa lambang burung Garuda Pancasila masuk ke ruang kelas SDN Pakis V, sehingga siswa seolah-olah melihat dan meletakkan lambang Garuda secara nyata di atas meja belajar mereka.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>2. WebRTC & API Akses Kamera (`getUserMedia`) <span class="tech-tag">Sensor Kamera</span></h4>
+      <h4>2. WebRTC & API Akses Kamera (`getUserMedia`) <span class="tech-tag">Pintu Izin Kamera</span></h4>
       <p>
-        <strong>Fungsi:</strong> Jalur izin resmi browser untuk menyalakan kamera HP atau webcam laptop siswa secara <em>real-time</em>. Seluruh pemrosesan video dilakukan langsung di dalam HP pengguna (tidak ada video yang dikirim ke internet), sehingga 100% aman bagi privasi anak-anak.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Pintu izin resmi di browser yang meminta izin sopan kepada pemilik perangkat sebelum menyalakan kamera.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyalakan kamera depan atau belakang HP/laptop siswa saat tombol <em>"Nyalakan Kamera AR"</em> ditekan. Video kamera hanya diproses langsung di layar HP siswa (tidak ada rekaman video yang dikirim atau disimpan ke server internet), sehingga 100% aman bagi privasi anak-anak.
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>3. HTML5 &lt;canvas&gt; API <span class="tech-tag">Mesin Penggabung Foto</span></h4>
+      <h4>3. HTML5 &lt;canvas&gt; API (Mesin Penggabung Foto) <span class="tech-tag">Kertas Foto Digital</span></h4>
       <p>
-        <strong>Fungsi:</strong> Ketika tombol "Foto Bersama AR" ditekan, mesin Canvas secara otomatis menangkap rekaman video kamera dan menumpuk gambar Garuda di atasnya, lalu menyatukannya menjadi sebuah file foto format PNG yang langsung terunduh ke galeri HP siswa.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Kanvas gambar tak terlihat di dalam browser yang berfungsi seperti kertas foto otomatis untuk menempelkan dan menggabungkan beberapa gambar menjadi satu.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Saat siswa menekan tombol <em>"Foto Bersama AR"</em>, kanvas ini langsung menangkap rekaman video kamera ruangan dan menempelkan gambar Garuda di atasnya, lalu menyimpannya menjadi sebuah foto kenang-kenangan format PNG yang langsung terunduh ke galeri HP siswa.
       </p>
     </div>
 
-    <h3 style="color: var(--primary); margin-top: 24px;">D. Fitur Audio, Penyimpanan & Server Cloud</h3>
+    <h3 style="color: var(--primary); margin-top: 24px;">D. Fitur Audio, Logika Kuis & Server Cloud</h3>
 
     <div class="tech-card">
-      <h4>1. Web Speech API (Text-to-Speech Otomatis Bahasa Indonesia) <span class="tech-tag">Suara Ramah Anak</span></h4>
+      <h4>1. Web Speech API (Text-to-Speech Otomatis Bahasa Indonesia) <span class="tech-tag">Pembaca Suara Manusia</span></h4>
       <p>
-        <strong>Fungsi:</strong> Fitur cerdas bawaan browser yang mengubah tulisan naskah menjadi suara manusia asli berbahasa Indonesia (<code>id-ID</code>). Suara ini ramah anak dan otomatis membacakan makna 5 sila saat tombol speaker ditekan, tanpa perlu menyewa pengisi suara atau membayar langganan server audio.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Fitur pintar di dalam sistem operasi HP dan komputer yang mampu membaca tulisan teks biasa lalu mengubahnya menjadi suara ucapan manusia asli secara otomatis.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Membacakan makna 5 sila dan contoh perilakunya dalam bahasa Indonesia (<code>id-ID</code>) dengan suara wanita yang ramah anak saat tombol speaker diklik. Sangat membantu siswa kelas rendah yang belum lancar membaca (gaya belajar auditori).
       </p>
     </div>
 
     <div class="tech-card">
-      <h4>2. GitHub & Netlify Cloud Hosting <span class="tech-tag">Server & Publikasi (Rp 0)</span></h4>
+      <h4>2. React State Management <span class="tech-tag">Papan Catatan Memori</span></h4>
       <p>
-        <strong>GitHub:</strong> Gudang arsip digital di internet (<code>AbdulGhoni109/sdn-pakis-v</code>) yang menyimpan seluruh kode program proyek secara aman lengkap dengan riwayat revisinya.<br>
-        <strong>Netlify:</strong> Server internet modern yang menyiarkan website ini ke seluruh dunia secara otomatis selama 24 jam sehari dengan alamat web resmi berkeamanan HTTPS. Seluruh infrastruktur ini <strong>100% bebas biaya (Rp 0 seumur hidup)</strong>.
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Papan catatan memori internal di dalam website yang mengingat apa saja yang sedang dilakukan oleh pengguna saat itu juga.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Mencatat secara akurat tab mana yang sedang dibuka siswa, berapa soal kuis yang sudah dijawab, skor nilai akhir yang diraih, serta letak koordinat geser (<em>drag</em>) lambang Garuda di meja.
+      </p>
+    </div>
+
+    <div class="tech-card">
+      <h4>3. Git & GitHub <span class="tech-tag">Brankas Kode Digital</span></h4>
+      <p>
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Lemari arsip digital di internet tempat menyimpan seluruh naskah kode program proyek secara rapi dan aman, lengkap dengan catatan tanggal pembuatannya.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyimpan repositori proyek resmi (<code>AbdulGhoni109/sdn-pakis-v</code>) agar berkas tidak hilang dan dapat diperbarui kapan saja.
+      </p>
+    </div>
+
+    <div class="tech-card">
+      <h4>4. Netlify Cloud Hosting <span class="tech-tag">Peladen Siar (Rp 0)</span></h4>
+      <p>
+        <span class="def-label">📖 Definisi Umum (Bahasa Awam):</span> Komputer peladen (<em>server</em>) raksasa di internet (cloud) yang bertugas menyiarkan website selama 24 jam sehari tanpa henti ke seluruh penjuru dunia.<br>
+        <span class="func-label">⚙️ Fungsinya di Web Ini:</span> Menyediakan tautan resmi website SDN Pakis V berkeamanan gembok hijau (<strong>HTTPS</strong>) yang bisa diakses gratis oleh guru, siswa, dan masyarakat luas kapan pun. Layanan ini <strong>100% bebas biaya (Rp 0 selamanya)</strong> tanpa biaya bulanan bagi sekolah.
       </p>
     </div>
 
@@ -523,7 +575,7 @@
       <div class="step-item">
         <h3>Tahap 2: Pembuatan Fondasi & Struktur Dasar Web</h3>
         <p>
-          <strong>Kelanjutannya:</strong> Menginisiasi (*setup*) proyek web di komputer lokal menggunakan <strong>Vite</strong> dan <strong>React 19</strong>. Memasang <strong>Tailwind CSS</strong> untuk standarisasi warna, tata letak, dan jenis font ramah anak (*Plus Jakarta Sans*). Menyusun struktur folder proyek secara rapi (folder komponen, folder halaman, folder data materi, dan folder aset publik untuk model 3D dan gambar).
+          <strong>Kelanjutannya:</strong> Menginisiasi (<em>setup</em>) proyek web di komputer lokal menggunakan <strong>Vite</strong> dan <strong>React 19</strong>. Memasang <strong>Tailwind CSS</strong> untuk standarisasi warna, tata letak, dan jenis font ramah anak (<em>Plus Jakarta Sans</em>). Menyusun struktur folder proyek secara rapi (folder komponen, folder halaman, folder data materi, dan folder aset publik untuk model 3D dan gambar).
         </p>
       </div>
 
@@ -541,7 +593,7 @@
       <div class="step-item">
         <h3>Tahap 4: Pemodelan & Kompresi Aset Patung 3D Garuda</h3>
         <p>
-          <strong>Kelanjutannya:</strong> Sebelum fitur AR bisa diprogram, aset 3D-nya harus disiapkan terlebih dahulu. Patung 3D Garuda Pancasila diolah dan diwarnai tekstur emas, lengkap dengan perisai 5 sila di dada dan pita cengkeraman bertuliskan *"Bhinneka Tunggal Ika"*. File dikompresi ke format standar web <code>.glb</code> dengan ukuran sangat ringkas (**~580 KB**). Disiapkan pula gambar resolusi tinggi berlatar belakang transparan (PNG dan SVG) untuk fitur kamera interaktif.
+          <strong>Kelanjutannya:</strong> Sebelum fitur AR bisa diprogram, aset 3D-nya harus disiapkan terlebih dahulu. Patung 3D Garuda Pancasila diolah dan diwarnai tekstur emas, lengkap dengan perisai 5 sila di dada dan pita cengkeraman bertuliskan <em>"Bhinneka Tunggal Ika"</em>. File dikompresi ke format standar web <code>.glb</code> dengan ukuran sangat ringkas (<strong>~580 KB</strong>). Disiapkan pula gambar resolusi tinggi berlatar belakang transparan (PNG dan SVG) untuk fitur kamera interaktif.
         </p>
       </div>
 
@@ -557,7 +609,7 @@
         <p>
           <strong>Kelanjutannya:</strong> Merakit halaman utama `MediaAR.jsx` beserta 4 komponen sub-fiturnya:
           <br>1. <strong>Mode 1 (ThreeDExplorer.jsx):</strong> Memasang patung 3D yang bisa diputar 360°, tombol 5 sila, dan <em>Web Speech API</em> untuk suara narasi otomatis bahasa Indonesia.
-          <br>2. <strong>Mode 2 (WebcamARViewer.jsx):</strong> Memprogram aktivasi kamera browser (<code>getUserMedia</code>), meletakkan lambang Garuda di atas rekaman video kamera secara live, membuat logika sentuh/geser (*drag*), slider ukuran & rotasi, tombol efek cahaya emas, serta tombol jepret foto menggunakan Canvas API yang langsung tersimpan di galeri HP.
+          <br>2. <strong>Mode 2 (WebcamARViewer.jsx):</strong> Memprogram aktivasi kamera browser (<code>getUserMedia</code>), meletakkan lambang Garuda di atas rekaman video kamera secara live, membuat logika sentuh/geser (<em>drag</em>), slider ukuran & rotasi, tombol efek cahaya emas, serta tombol jepret foto menggunakan Canvas API yang langsung tersimpan di galeri HP.
           <br>3. <strong>Mode 3 (NativeModelViewer.jsx):</strong> Memasang Google Model-Viewer untuk memproyeksikan patung 3D berdiri di lantai atau meja kelas nyata melalui sensor ARCore/QuickLook smartphone, lengkap dengan Kode QR akses cepat.
           <br>4. <strong>Mode 4 (PancasilaQuiz.jsx):</strong> Membangun kuis interaktif 4 butir soal dengan umpan balik benar/salah instan, penjelasan materi, dan penghitungan skor akhir otomatis.
         </p>
@@ -637,7 +689,7 @@
       <p style="font-size: 14px;"><strong>Tujuan Pembelajaran:</strong> Mengamati bentuk fisik patung Garuda secara menyeluruh dari segala sisi dan mendengarkan penjelasan audio.</p>
       <ul style="padding-left: 20px; font-size: 14px; margin-bottom: 16px;">
         <li>Buka menu <strong>"Media AR"</strong> lalu pilih tab <strong>"Eksplorasi 3D & Suara"</strong>.</li>
-        <li>Gunakan jari di layar HP (atau kursor mouse di laptop) untuk memutar patung Garuda ke segala arah (360 derajat). Cubit layar dengan 2 jari untuk memperbesar objek (*zoom in*).</li>
+        <li>Gunakan jari di layar HP (atau kursor mouse di laptop) untuk memutar patung Garuda ke segala arah (360 derajat). Cubit layar dengan 2 jari untuk memperbesar objek (<em>zoom in</em>).</li>
         <li>Klik salah satu dari 5 lambang sila di bawah patung (Bintang, Rantai, Beringin, Banteng, Padi & Kapas).</li>
         <li>Baca makna lambang dan contoh pengamalannya di lingkungan sekolah.</li>
         <li>Klik tombol speaker <strong>"Dengarkan Narasi Suara"</strong> agar website membacakan penjelasan materi dengan suara ramah anak secara otomatis.</li>
@@ -648,7 +700,7 @@
       <p style="font-size: 14px;"><strong>Tujuan Pembelajaran:</strong> Menghadirkan lambang Garuda tepat di atas meja belajar siswa menggunakan kamera dan mengambil foto hasil karya belajar.</p>
       <ul style="padding-left: 20px; font-size: 14px; margin-bottom: 16px;">
         <li>Pilih tab <strong>"Kamera WebAR Interaktif"</strong> lalu klik tombol emas <strong>"Nyalakan Kamera AR"</strong>.</li>
-        <li>Ketika muncul pertanyaan izin di browser: *"Izinkan website mengakses kamera Anda?"*, klik <strong>"Izinkan" (Allow)</strong>.</li>
+        <li>Ketika muncul pertanyaan izin di browser: <em>"Izinkan website mengakses kamera Anda?"</em>, klik <strong>"Izinkan" (Allow)</strong>.</li>
         <li>Arahkan kamera HP ke meja belajar atau lantai kelas.</li>
         <li>Lambang Garuda akan tampil melayang di layar:
           <br>• <strong>Geser posisi:</strong> Sentuh dan geser lambang Garuda ke area meja yang diinginkan.
@@ -695,7 +747,7 @@
       </div>
       <div class="faq-a">
         <strong>Penyebab:</strong> Pengguna biasanya tidak sengaja menekan tombol "Blokir" saat browser meminta izin kamera, atau izin kamera di aplikasi Google Chrome HP belum diaktifkan.<br>
-        <strong>Solusi:</strong> Di browser HP (Google Chrome), klik ikon pengaturan di sebelah kiri alamat web (URL), pilih <em>Izin (Permissions) &rarr; Kamera (Camera)</em>, lalu ubah statusnya menjadi <strong>Izinkan (Allow)</strong>. Setelah itu muat ulang (*refresh*) halaman web dan tekan kembali tombol nyalakan kamera.
+        <strong>Solusi:</strong> Di browser HP (Google Chrome), klik ikon pengaturan di sebelah kiri alamat web (URL), pilih <em>Izin (Permissions) &rarr; Kamera (Camera)</em>, lalu ubah statusnya menjadi <strong>Izinkan (Allow)</strong>. Setelah itu muat ulang (<em>refresh</em>) halaman web dan tekan kembali tombol nyalakan kamera.
       </div>
     </div>
 
@@ -716,7 +768,7 @@
         <span>Apakah website ini boros kuota internet siswa?</span>
       </div>
       <div class="faq-a">
-        <strong>Sangat hemat.</strong> Semua aset grafis dan model 3D di website ini telah dikompresi secara maksimal. Patung 3D Garuda hanya berukuran sekitar <strong>~580 KB</strong> (kurang dari 1 MB), jauh lebih kecil dibandingkan membuka 1 foto di aplikasi Instagram (yang rata-rata memakan kuota 2–5 MB). Sekali website dibuka, seluruh halaman akan tersimpan di memori sementara (*cache*) browser sehingga pembukaan berikutnya berjalan instan tanpa menyedot kuota lagi.
+        <strong>Sangat hemat.</strong> Semua aset grafis dan model 3D di website ini telah dikompresi secara maksimal. Patung 3D Garuda hanya berukuran sekitar <strong>~580 KB</strong> (kurang dari 1 MB), jauh lebih kecil dibandingkan membuka 1 foto di aplikasi Instagram (yang rata-rata memakan kuota 2–5 MB). Sekali website dibuka, seluruh halaman akan tersimpan di memori sementara (<em>cache</em>) browser sehingga pembukaan berikutnya berjalan instan tanpa menyedot kuota lagi.
       </div>
     </div>
 
