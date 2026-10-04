@@ -403,7 +403,147 @@
     </p>
 
     <div style="margin: 24px 0; text-align: center;">
-      <img src="images/diagram-arsitektur.svg" alt="Peta Arsitektur Teknologi Proyek" style="width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" style="width: 100%; max-width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04); display: block;">
+  <defs>
+    <style>
+      text { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1B4F72; }
+      .subtitle { font-size: 13px; font-weight: 500; fill: #64748B; }
+      .card-title { font-size: 15px; font-weight: 700; }
+      .card-task { font-size: 12px; font-weight: 500; fill: #334155; }
+      .pill-text { font-size: 11px; font-weight: 700; }
+      .badge-text { font-size: 11px; font-weight: 800; letter-spacing: 0.5px; }
+    </style>
+    <filter id="shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="520" rx="20" fill="#F8FAFC"/>
+  <rect x="15" y="15" width="870" height="490" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Header Banner -->
+  <rect x="40" y="36" width="160" height="26" rx="13" fill="#EBF2F8"/>
+  <text x="120" y="53" text-anchor="middle" class="badge-text" fill="#1B4F72">PETA TEKNOLOGI</text>
+  <text x="40" y="86" class="title">Struktur Arsitektur Website &amp; Media AR SDN Pakis V</text>
+  <text x="40" y="106" class="subtitle">Pembagian 5 pilar utama pembangun website beserta tugas dan teknologi yang digunakan</text>
+
+  <!-- Line Separator -->
+  <line x1="40" y1="122" x2="860" y2="122" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- GRID: 5 CARDS -->
+
+  <!-- CARD 1: ANTARMUKA WEB (BIRU) -->
+  <g transform="translate(40, 138)">
+    <rect width="256" height="165" rx="14" fill="#F0F7FD" stroke="#BAE0FD" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#1B4F72"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">💻</text>
+    <text x="56" y="27" class="card-title" fill="#1B4F72">1. Wajah &amp; Tampilan Web</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#0284C7">Bagian yang dilihat siswa di layar</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menata tulisan, gambar, tombol</text>
+    <text x="30" y="84" class="card-task">dan tata letak agar pas di layar HP/laptop.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="68" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="48" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">HTML5</text>
+    <rect x="88" y="100" width="76" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="126" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">Tailwind</text>
+    <rect x="170" y="100" width="72" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="206" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">React 19</text>
+
+    <rect x="14" y="128" width="108" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="68" y="143" text-anchor="middle" class="pill-text" fill="#0F172A">JavaScript (ES6)</text>
+    <rect x="128" y="128" width="60" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="158" y="143" text-anchor="middle" class="pill-text" fill="#0F172A">Vite</text>
+  </g>
+
+  <!-- CARD 2: PENGOLAH 3D (EMAS) -->
+  <g transform="translate(322, 138)">
+    <rect width="256" height="165" rx="14" fill="#FEF9EC" stroke="#FDE68A" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#D4921A"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">🦅</text>
+    <text x="56" y="27" class="card-title" fill="#92400E">2. Patung 3D Garuda</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#D97706">Objek digital bervolume nyata</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menyajikan patung Garuda 3D</text>
+    <text x="30" y="84" class="card-task">360° yang sangat ringan (~580 KB).</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="65" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="46" y="115" text-anchor="middle" class="pill-text" fill="#78350F">Blender</text>
+    <rect x="85" y="100" width="85" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="127" y="115" text-anchor="middle" class="pill-text" fill="#78350F">Format .GLB</text>
+    <rect x="176" y="100" width="68" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="210" y="115" text-anchor="middle" class="pill-text" fill="#78350F">Three.js</text>
+
+    <rect x="14" y="128" width="145" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="86" y="143" text-anchor="middle" class="pill-text" fill="#78350F">Google Model-Viewer</text>
+  </g>
+
+  <!-- CARD 3: KAMERA & AR (UNGU) -->
+  <g transform="translate(604, 138)">
+    <rect width="256" height="165" rx="14" fill="#FBF7FF" stroke="#E9D5FF" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#7C3AED"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">📷</text>
+    <text x="56" y="27" class="card-title" fill="#6B21A8">3. Kamera &amp; WebAR</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#9333EA">Membawa objek ke meja kelas</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menyalakan kamera browser,</text>
+    <text x="30" y="84" class="card-task">geser lambang di meja &amp; simpan foto.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="65" height="22" rx="6" fill="#FFFFFF" stroke="#D8B4FE"/>
+    <text x="46" y="115" text-anchor="middle" class="pill-text" fill="#581C87">WebAR</text>
+    <rect x="85" y="100" width="105" height="22" rx="6" fill="#FFFFFF" stroke="#D8B4FE"/>
+    <text x="137" y="115" text-anchor="middle" class="pill-text" fill="#581C87">getUserMedia API</text>
+
+    <rect x="14" y="128" width="118" height="22" rx="6" fill="#FFFFFF" stroke="#D8B4FE"/>
+    <text x="73" y="143" text-anchor="middle" class="pill-text" fill="#581C87">HTML5 Canvas API</text>
+  </g>
+
+  <!-- CARD 4: SUARA & KUIS (HIJAU) -->
+  <g transform="translate(160, 320)">
+    <rect width="270" height="165" rx="14" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#059669"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">🔊</text>
+    <text x="56" y="27" class="card-title" fill="#065F46">4. Suara Narasi &amp; Kuis</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#059669">Fitur edukasi interaktif mandiri</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Membacakan suara makna 5 sila</text>
+    <text x="30" y="84" class="card-task">secara otomatis &amp; hitung nilai kuis.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="180" height="22" rx="6" fill="#FFFFFF" stroke="#86EFAC"/>
+    <text x="104" y="115" text-anchor="middle" class="pill-text" fill="#064E3B">Web Speech API (TTS)</text>
+
+    <rect x="14" y="128" width="165" height="22" rx="6" fill="#FFFFFF" stroke="#86EFAC"/>
+    <text x="96" y="143" text-anchor="middle" class="pill-text" fill="#064E3B">React State Management</text>
+  </g>
+
+  <!-- CARD 5: SERVER & CLOUD (ABU/SLATE) -->
+  <g transform="translate(470, 320)">
+    <rect width="270" height="165" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#475569"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">☁️</text>
+    <text x="56" y="27" class="card-title" fill="#1E293B">5. Server &amp; Cloud (Rp 0)</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#64748B">Rumah online agar web bisa diakses</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menyiarkan web 24 jam gratis,</text>
+    <text x="30" y="84" class="card-task">aman (HTTPS), tanpa biaya sewa server.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="105" height="22" rx="6" fill="#FFFFFF" stroke="#94A3B8"/>
+    <text x="66" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">GitHub Repo</text>
+    <rect x="125" y="100" width="130" height="22" rx="6" fill="#FFFFFF" stroke="#94A3B8"/>
+    <text x="190" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">Netlify Cloud Host</text>
+
+    <rect x="14" y="128" width="140" height="22" rx="6" fill="#FFFFFF" stroke="#94A3B8"/>
+    <text x="84" y="143" text-anchor="middle" class="pill-text" fill="#0F172A">Keamanan HTTPS</text>
+  </g>
+
+</svg>
     </div>
 
     <div class="highlight-card" style="margin-bottom: 24px;">
@@ -722,7 +862,127 @@
     </p>
 
     <div style="margin: 24px 0; text-align: center;">
-      <img src="images/diagram-alur-pembuatan.svg" alt="Peta Alur Kronologis Pembuatan Proyek" style="width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" style="width: 100%; max-width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04); display: block;">
+  <defs>
+    <style>
+      text { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1B4F72; }
+      .subtitle { font-size: 13px; font-weight: 500; fill: #64748B; }
+      .step-num { font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .step-title { font-size: 13px; font-weight: 700; fill: #0F172A; }
+      .step-desc { font-size: 11px; font-weight: 500; fill: #475569; }
+      .badge-text { font-size: 11px; font-weight: 800; letter-spacing: 0.5px; }
+    </style>
+    <filter id="shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="480" rx="20" fill="#F8FAFC"/>
+  <rect x="15" y="15" width="870" height="450" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Header Banner -->
+  <rect x="40" y="34" width="180" height="26" rx="13" fill="#FEF9EC"/>
+  <text x="130" y="51" text-anchor="middle" class="badge-text" fill="#B45309">ALUR KERJA NYATA</text>
+  <text x="40" y="84" class="title">Kronologi Pembuatan Proyek: Dari Nol Hingga Online</text>
+  <text x="40" y="104" class="subtitle">Urutan langkah nyata apa dulu yang dikerjakan hingga website dan media AR selesai</text>
+
+  <!-- Line Separator -->
+  <line x1="40" y1="120" x2="860" y2="120" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- BARIS 1: LANGKAH 1, 2, 3 -->
+
+  <!-- STEP 1 -->
+  <g transform="translate(40, 138)">
+    <rect width="248" height="135" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="16" fill="#1B4F72"/>
+    <text x="28" y="33" text-anchor="middle" class="step-num">1</text>
+    <text x="54" y="26" class="step-title">Riset Konten &amp; Kurikulum</text>
+    <text x="54" y="40" font-size="10px" font-weight="600" fill="#0284C7">Fase Perencanaan</text>
+    <text x="16" y="68" class="step-desc">Kumpulkan profil SDN Pakis V,</text>
+    <text x="16" y="84" class="step-desc">susun makna 5 sila Pancasila,</text>
+    <text x="16" y="100" class="step-desc">filosofi 17-8-1945 &amp; 4 soal kuis.</text>
+  </g>
+
+  <!-- ARROW 1 -> 2 -->
+  <path d="M 298 205 L 334 205 M 326 199 L 334 205 L 326 211" stroke="#94A3B8" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- STEP 2 -->
+  <g transform="translate(344, 138)">
+    <rect width="248" height="135" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="16" fill="#0284C7"/>
+    <text x="28" y="33" text-anchor="middle" class="step-num">2</text>
+    <text x="54" y="26" class="step-title">Fondasi Web &amp; Tampilan</text>
+    <text x="54" y="40" font-size="10px" font-weight="600" fill="#0284C7">Fase Kerangka Web</text>
+    <text x="16" y="68" class="step-desc">Inisiasi Vite + React + Tailwind.</text>
+    <text x="16" y="84" class="step-desc">Bikin halaman Profil, Visi Misi,</text>
+    <text x="16" y="100" class="step-desc">Guru, Fasilitas, Berita &amp; Footer.</text>
+  </g>
+
+  <!-- ARROW 2 -> 3 -->
+  <path d="M 602 205 L 638 205 M 630 199 L 638 205 L 630 211" stroke="#94A3B8" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- STEP 3 -->
+  <g transform="translate(648, 138)">
+    <rect width="212" height="135" rx="12" fill="#FEF9EC" stroke="#FDE68A" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="16" fill="#D4921A"/>
+    <text x="28" y="33" text-anchor="middle" class="step-num">3</text>
+    <text x="54" y="26" class="step-title">Aset 3D Garuda</text>
+    <text x="54" y="40" font-size="10px" font-weight="600" fill="#D97706">Fase Desain 3D</text>
+    <text x="16" y="68" class="step-desc">Pahat patung 3D Garuda,</text>
+    <text x="16" y="84" class="step-desc">kompresi ke file .GLB (~580KB)</text>
+    <text x="16" y="100" class="step-desc">&amp; gambar transparan PNG.</text>
+  </g>
+
+  <!-- CONNECTING TURN ARROW (ROW 1 TO ROW 2) -->
+  <path d="M 754 283 L 754 300 Q 754 310 744 310 L 710 310" stroke="#CBD5E1" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+
+  <!-- BARIS 2: LANGKAH 4, 5, 6 -->
+
+  <!-- STEP 4 -->
+  <g transform="translate(40, 310)">
+    <rect width="248" height="135" rx="12" fill="#FBF7FF" stroke="#E9D5FF" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="16" fill="#7C3AED"/>
+    <text x="28" y="33" text-anchor="middle" class="step-num">4</text>
+    <text x="54" y="26" class="step-title">Rakit 4 Fitur Media AR</text>
+    <text x="54" y="40" font-size="10px" font-weight="600" fill="#7C3AED">Fase Inti Interaktif</text>
+    <text x="16" y="68" class="step-desc">Program: 1) 3D &amp; Suara Narasi,</text>
+    <text x="16" y="84" class="step-desc">2) Kamera WebAR &amp; Jepret Foto,</text>
+    <text x="16" y="100" class="step-desc">3) Native AR Lantai, 4) Kuis Nilai.</text>
+  </g>
+
+  <!-- ARROW 4 -> 5 -->
+  <path d="M 298 377 L 334 377 M 326 371 L 334 377 L 326 383" stroke="#94A3B8" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- STEP 5 -->
+  <g transform="translate(344, 310)">
+    <rect width="248" height="135" rx="12" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="16" fill="#059669"/>
+    <text x="28" y="33" text-anchor="middle" class="step-num">5</text>
+    <text x="54" y="26" class="step-title">Uji Coba di HP &amp; Laptop</text>
+    <text x="54" y="40" font-size="10px" font-weight="600" fill="#059669">Fase Pengujian (Testing)</text>
+    <text x="16" y="68" class="step-desc">Tes di berbagai smartphone (HP</text>
+    <text x="16" y="84" class="step-desc">Android &amp; iPhone). Cek kamera,</text>
+    <text x="16" y="100" class="step-desc">suara, dan warna kontras tombol.</text>
+  </g>
+
+  <!-- ARROW 5 -> 6 -->
+  <path d="M 602 377 L 638 377 M 630 371 L 638 377 L 630 383" stroke="#94A3B8" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- STEP 6 -->
+  <g transform="translate(648, 310)">
+    <rect width="212" height="135" rx="12" fill="#EBF2F8" stroke="#BAE0FD" stroke-width="1.5"/>
+    <circle cx="28" cy="28" r="16" fill="#1B4F72"/>
+    <text x="28" y="33" text-anchor="middle" class="step-num">6</text>
+    <text x="54" y="26" class="step-title">Peluncuran Online</text>
+    <text x="54" y="40" font-size="10px" font-weight="600" fill="#1B4F72">Fase Rilis (Deploy)</text>
+    <text x="16" y="68" class="step-desc">Simpan kode ke GitHub,</text>
+    <text x="16" y="84" class="step-desc">siarkan gratis lewat Netlify</text>
+    <text x="16" y="100" class="step-desc">beralamat resmi HTTPS.</text>
+  </g>
+
+</svg>
     </div>
 
     <div class="highlight-card" style="margin-bottom: 24px;">
@@ -819,7 +1079,106 @@
     </p>
 
     <div style="margin: 24px 0; text-align: center;">
-      <img src="images/diagram-cara-kerja-ar.svg" alt="Peta Visual Cara Kerja 4 Fitur Media AR" style="width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" style="width: 100%; max-width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04); display: block;">
+  <defs>
+    <style>
+      text { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1B4F72; }
+      .subtitle { font-size: 13px; font-weight: 500; fill: #64748B; }
+      .mode-title { font-size: 15px; font-weight: 700; }
+      .sub-header { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+      .content-text { font-size: 12px; font-weight: 500; fill: #334155; line-height: 1.5; }
+      .badge-text { font-size: 11px; font-weight: 800; letter-spacing: 0.5px; }
+    </style>
+    <filter id="shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="480" rx="20" fill="#F8FAFC"/>
+  <rect x="15" y="15" width="870" height="450" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Header Banner -->
+  <rect x="40" y="34" width="170" height="26" rx="13" fill="#ECFDF5"/>
+  <text x="125" y="51" text-anchor="middle" class="badge-text" fill="#065F46">4 MODE INTERAKTIF</text>
+  <text x="40" y="84" class="title">Cara Kerja Teknis 4 Fitur Media Pembelajaran AR</text>
+  <text x="40" y="104" class="subtitle">Bagaimana sistem memproses data di balik layar dan pengalaman yang didapatkan siswa</text>
+
+  <!-- Line Separator -->
+  <line x1="40" y1="120" x2="860" y2="120" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- 4 PANELS GRID (2x2) -->
+
+  <!-- PANEL 1: EKSPLORASI 3D & AUDIO (EMAS) -->
+  <g transform="translate(40, 138)">
+    <rect width="395" height="145" rx="14" fill="#FEF9EC" stroke="#FDE68A" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#D4921A"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">🦅</text>
+    <text x="56" y="27" class="mode-title" fill="#92400E">Mode 1: Eksplorasi 3D &amp; Suara</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#D97706">Patung digital bervolume 360° + narator suara</text>
+
+    <!-- Di Balik Layar -->
+    <text x="14" y="70" class="sub-header" fill="#B45309">⚙️ Di Balik Layar:</text>
+    <text x="14" y="86" class="content-text">Three.js memuat berkas .GLB (~580KB) dan merender 3D.</text>
+    <text x="14" y="102" class="content-text">Tombol speaker memanggil Web Speech API bahasa Indonesia.</text>
+
+    <!-- Pengalaman Siswa -->
+    <text x="14" y="124" class="content-text">👉 <tspan font-weight="700">Siswa:</tspan> Memutar patung &amp; mendengarkan suara makna 5 sila.</text>
+  </g>
+
+  <!-- PANEL 2: KAMERA WEBAR INTERAKTIF (UNGU) -->
+  <g transform="translate(465, 138)">
+    <rect width="395" height="145" rx="14" fill="#FBF7FF" stroke="#E9D5FF" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#7C3AED"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">📷</text>
+    <text x="56" y="27" class="mode-title" fill="#6B21A8">Mode 2: Kamera WebAR di Meja</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#9333EA">Kamera HP/laptop + manipulasi lambang</text>
+
+    <!-- Di Balik Layar -->
+    <text x="14" y="70" class="sub-header" fill="#7C3AED">⚙️ Di Balik Layar:</text>
+    <text x="14" y="86" class="content-text">Browser minta izin kamera (getUserMedia) secara privat.</text>
+    <text x="14" y="102" class="content-text">Canvas API menggabungkan video + gambar lambang jadi foto.</text>
+
+    <!-- Pengalaman Siswa -->
+    <text x="14" y="124" class="content-text">👉 <tspan font-weight="700">Siswa:</tspan> Geser lambang ke meja belajar &amp; foto bersama.</text>
+  </g>
+
+  <!-- PANEL 3: 3D NYATA DI RUANGAN (BIRU) -->
+  <g transform="translate(40, 300)">
+    <rect width="395" height="145" rx="14" fill="#F0F7FD" stroke="#BAE0FD" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#1B4F72"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">📱</text>
+    <text x="56" y="27" class="mode-title" fill="#1B4F72">Mode 3: 3D Nyata di Ruangan (Native AR)</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#0284C7">Patung AR berdiri di lantai/meja kelas</text>
+
+    <!-- Di Balik Layar -->
+    <text x="14" y="70" class="sub-header" fill="#0284C7">⚙️ Di Balik Layar:</text>
+    <text x="14" y="86" class="content-text">Google Model-Viewer memicu sensor ARCore/QuickLook HP.</text>
+    <text x="14" y="102" class="content-text">Sensor memindai permukaan lantai datar secara akurat.</text>
+
+    <!-- Pengalaman Siswa -->
+    <text x="14" y="124" class="content-text">👉 <tspan font-weight="700">Siswa:</tspan> Berjalan mengelilingi patung Garuda di lantai kelas.</text>
+  </g>
+
+  <!-- PANEL 4: KUIS PANCASILA (HIJAU) -->
+  <g transform="translate(465, 300)">
+    <rect width="395" height="145" rx="14" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#059669"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">📝</text>
+    <text x="56" y="27" class="mode-title" fill="#065F46">Mode 4: Kuis Pendidikan Pancasila</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#059669">Evaluasi mandiri interaktif seketika</text>
+
+    <!-- Di Balik Layar -->
+    <text x="14" y="70" class="sub-header" fill="#059669">⚙️ Di Balik Layar:</text>
+    <text x="14" y="86" class="content-text">React State memvalidasi kunci jawaban saat tombol diklik.</text>
+    <text x="14" y="102" class="content-text">Kotak pembahasan guru dibuka &amp; skor akhir dikalkulasi.</text>
+
+    <!-- Pengalaman Siswa -->
+    <text x="14" y="124" class="content-text">👉 <tspan font-weight="700">Siswa:</tspan> Dapat nilai instan &amp; penjelasan materi dari guru.</text>
+  </g>
+
+</svg>
     </div>
 
     <div class="highlight-card" style="margin-bottom: 24px;">
