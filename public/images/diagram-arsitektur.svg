@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap');
+      text { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+      .title { font-size: 20px; font-weight: 800; fill: #1B4F72; }
+      .subtitle { font-size: 13px; font-weight: 500; fill: #64748B; }
+      .card-title { font-size: 15px; font-weight: 700; }
+      .card-task { font-size: 12px; font-weight: 500; fill: #334155; }
+      .pill-text { font-size: 11px; font-weight: 700; }
+      .badge-text { font-size: 11px; font-weight: 800; letter-spacing: 0.5px; }
+    </style>
+    <filter id="shadow" x="-3%" y="-4%" width="106%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="520" rx="20" fill="#F8FAFC"/>
+  <rect x="15" y="15" width="870" height="490" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Header Banner -->
+  <rect x="40" y="36" width="160" height="26" rx="13" fill="#EBF2F8"/>
+  <text x="120" y="53" text-anchor="middle" class="badge-text" fill="#1B4F72">PETA TEKNOLOGI</text>
+  <text x="40" y="86" class="title">Struktur Arsitektur Website &amp; Media AR SDN Pakis V</text>
+  <text x="40" y="106" class="subtitle">Pembagian 5 pilar utama pembangun website beserta tugas dan teknologi yang digunakan</text>
+
+  <!-- Line Separator -->
+  <line x1="40" y1="122" x2="860" y2="122" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- GRID: 5 CARDS -->
+
+  <!-- CARD 1: ANTARMUKA WEB (BIRU) -->
+  <g transform="translate(40, 138)">
+    <rect width="256" height="165" rx="14" fill="#F0F7FD" stroke="#BAE0FD" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#1B4F72"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">💻</text>
+    <text x="56" y="27" class="card-title" fill="#1B4F72">1. Wajah &amp; Tampilan Web</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#0284C7">Bagian yang dilihat siswa di layar</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menata tulisan, gambar, tombol</text>
+    <text x="30" y="84" class="card-task">dan tata letak agar pas di layar HP/laptop.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="68" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="48" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">HTML5</text>
+    <rect x="88" y="100" width="76" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="126" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">Tailwind</text>
+    <rect x="170" y="100" width="72" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="206" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">React 19</text>
+
+    <rect x="14" y="128" width="108" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="68" y="143" text-anchor="middle" class="pill-text" fill="#0F172A">JavaScript (ES6)</text>
+    <rect x="128" y="128" width="60" height="22" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="158" y="143" text-anchor="middle" class="pill-text" fill="#0F172A">Vite</text>
+  </g>
+
+  <!-- CARD 2: PENGOLAH 3D (EMAS) -->
+  <g transform="translate(322, 138)">
+    <rect width="256" height="165" rx="14" fill="#FEF9EC" stroke="#FDE68A" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#D4921A"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">🦅</text>
+    <text x="56" y="27" class="card-title" fill="#92400E">2. Patung 3D Garuda</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#D97706">Objek digital bervolume nyata</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menyajikan patung Garuda 3D</text>
+    <text x="30" y="84" class="card-task">360° yang sangat ringan (~580 KB).</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="65" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="46" y="115" text-anchor="middle" class="pill-text" fill="#78350F">Blender</text>
+    <rect x="85" y="100" width="85" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="127" y="115" text-anchor="middle" class="pill-text" fill="#78350F">Format .GLB</text>
+    <rect x="176" y="100" width="68" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="210" y="115" text-anchor="middle" class="pill-text" fill="#78350F">Three.js</text>
+
+    <rect x="14" y="128" width="145" height="22" rx="6" fill="#FFFFFF" stroke="#FCD34D"/>
+    <text x="86" y="143" text-anchor="middle" class="pill-text" fill="#78350F">Google Model-Viewer</text>
+  </g>
+
+  <!-- CARD 3: KAMERA & AR (UNGU) -->
+  <g transform="translate(604, 138)">
+    <rect width="256" height="165" rx="14" fill="#FBF7FF" stroke="#E9D5FF" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#7C3AED"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">📷</text>
+    <text x="56" y="27" class="card-title" fill="#6B21A8">3. Kamera &amp; WebAR</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#9333EA">Membawa objek ke meja kelas</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menyalakan kamera browser,</text>
+    <text x="30" y="84" class="card-task">geser lambang di meja &amp; simpan foto.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="65" height="22" rx="6" fill="#FFFFFF" stroke="#D8B4FE"/>
+    <text x="46" y="115" text-anchor="middle" class="pill-text" fill="#581C87">WebAR</text>
+    <rect x="85" y="100" width="105" height="22" rx="6" fill="#FFFFFF" stroke="#D8B4FE"/>
+    <text x="137" y="115" text-anchor="middle" class="pill-text" fill="#581C87">getUserMedia API</text>
+
+    <rect x="14" y="128" width="118" height="22" rx="6" fill="#FFFFFF" stroke="#D8B4FE"/>
+    <text x="73" y="143" text-anchor="middle" class="pill-text" fill="#581C87">HTML5 Canvas API</text>
+  </g>
+
+  <!-- CARD 4: SUARA & KUIS (HIJAU) -->
+  <g transform="translate(160, 320)">
+    <rect width="270" height="165" rx="14" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#059669"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">🔊</text>
+    <text x="56" y="27" class="card-title" fill="#065F46">4. Suara Narasi &amp; Kuis</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#059669">Fitur edukasi interaktif mandiri</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Membacakan suara makna 5 sila</text>
+    <text x="30" y="84" class="card-task">secara otomatis &amp; hitung nilai kuis.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="180" height="22" rx="6" fill="#FFFFFF" stroke="#86EFAC"/>
+    <text x="104" y="115" text-anchor="middle" class="pill-text" fill="#064E3B">Web Speech API (TTS)</text>
+
+    <rect x="14" y="128" width="165" height="22" rx="6" fill="#FFFFFF" stroke="#86EFAC"/>
+    <text x="96" y="143" text-anchor="middle" class="pill-text" fill="#064E3B">React State Management</text>
+  </g>
+
+  <!-- CARD 5: SERVER & CLOUD (ABU/SLATE) -->
+  <g transform="translate(470, 320)">
+    <rect width="270" height="165" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#475569"/>
+    <text x="30" y="35" text-anchor="middle" font-size="16" fill="#FFFFFF">☁️</text>
+    <text x="56" y="27" class="card-title" fill="#1E293B">5. Server &amp; Cloud (Rp 0)</text>
+    <text x="56" y="42" font-size="11px" font-weight="600" fill="#64748B">Rumah online agar web bisa diakses</text>
+
+    <text x="14" y="68" class="card-task">📌 <tspan font-weight="700">Tugas:</tspan> Menyiarkan web 24 jam gratis,</text>
+    <text x="30" y="84" class="card-task">aman (HTTPS), tanpa biaya sewa server.</text>
+
+    <!-- Tech Pills -->
+    <rect x="14" y="100" width="105" height="22" rx="6" fill="#FFFFFF" stroke="#94A3B8"/>
+    <text x="66" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">GitHub Repo</text>
+    <rect x="125" y="100" width="130" height="22" rx="6" fill="#FFFFFF" stroke="#94A3B8"/>
+    <text x="190" y="115" text-anchor="middle" class="pill-text" fill="#0F172A">Netlify Cloud Host</text>
+
+    <rect x="14" y="128" width="140" height="22" rx="6" fill="#FFFFFF" stroke="#94A3B8"/>
+    <text x="84" y="143" text-anchor="middle" class="pill-text" fill="#0F172A">Keamanan HTTPS</text>
+  </g>
+
+</svg>

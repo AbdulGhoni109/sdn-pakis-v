@@ -402,15 +402,21 @@
       <br><strong>3. Fungsi di Website Ini:</strong> Tugas konkret teknologi tersebut pada website SDN Pakis V.
     </p>
 
-    <div class="code-diagram">====================================================================================
-                        ARSITEKTUR TEKNOLOGI PROYEK
-====================================================================================
-[ Antarmuka Web ]  --> HTML5 + CSS3 + Tailwind CSS + JavaScript + React 19 + Vite
-[ Pengolah 3D ]    --> Blender (Format .GLB / glTF) + Three.js + Google Model-Viewer
-[ Kamera & AR ]    --> WebAR + WebRTC (getUserMedia API) + HTML5 Canvas
-[ Audio & Kuis ]   --> Web Speech API (Text-to-Speech) + React State Management
-[ Server & Cloud ] --> Node.js + Git + GitHub Repository + Netlify Cloud (HTTPS)
-====================================================================================</div>
+    <div style="margin: 24px 0; text-align: center;">
+      <img src="public/images/diagram-arsitektur.svg" alt="Peta Arsitektur Teknologi Proyek" style="width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+    </div>
+
+    <div class="highlight-card" style="margin-bottom: 24px;">
+      <strong>💡 Cara Membaca Diagram di Atas:</strong>
+      <p style="margin-top: 6px; margin-bottom: 0; font-size: 14px;">
+        Website ini tidak dibuat dengan satu program tunggal, melainkan gabungan dari <strong>5 pilar teknologi</strong> yang saling bekerja sama:
+        <br><strong>1. Wajah &amp; Tampilan Web (Warna Biru):</strong> Mengatur apa yang dilihat dan disentuh siswa di layar HP (teks, tata letak, warna, dan tombol).
+        <br><strong>2. Patung 3D Garuda (Warna Kuning Emas):</strong> Mengolah patung burung Garuda agar bervolume 3D nyata dan dapat diputar 360°, namun ukurannya sangat ringan (~580 KB) sehingga hemat kuota.
+        <br><strong>3. Kamera &amp; WebAR (Warna Ungu):</strong> Menyalakan kamera HP dan menempelkan lambang Garuda di meja belajar siswa tanpa install aplikasi.
+        <br><strong>4. Suara Narasi &amp; Kuis (Warna Hijau):</strong> Mengubah teks menjadi suara ucapan bahasa Indonesia ramah anak dan menghitung nilai kuis secara otomatis.
+        <br><strong>5. Server &amp; Cloud (Warna Abu/Slate):</strong> Komputer server di internet yang menyiarkan website selama 24 jam gratis (Rp 0 seumur hidup) dengan keamanan HTTPS.
+      </p>
+    </div>
 
     <h3 style="color: var(--primary); margin-top: 24px;">A. Teknologi Tampilan Website (Frontend)</h3>
 
@@ -715,6 +721,23 @@
       Berikut adalah penjelasan urutan nyata pembangunan proyek dari hari pertama hingga website terbit secara online:
     </p>
 
+    <div style="margin: 24px 0; text-align: center;">
+      <img src="public/images/diagram-alur-pembuatan.svg" alt="Peta Alur Kronologis Pembuatan Proyek" style="width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+    </div>
+
+    <div class="highlight-card" style="margin-bottom: 24px;">
+      <strong>💡 Cara Membaca Alur di Atas:</strong>
+      <p style="margin-top: 6px; margin-bottom: 0; font-size: 14px;">
+        Pembangunan proyek ini berjalan teratur dalam 6 langkah utama:
+        <br><strong>Langkah 1 (Riset Konten):</strong> Mengumpulkan profil sekolah dan materi kurikulum Pancasila.
+        <br><strong>Langkah 2 (Fondasi Web):</strong> Membangun kerangka dan tampilan profil sekolah (React + Tailwind).
+        <br><strong>Langkah 3 (Aset 3D):</strong> Memahat patung digital Garuda dan mengompresinya menjadi ~580 KB.
+        <br><strong>Langkah 4 (Rakit 4 Fitur AR):</strong> Memprogram fitur 3D, suara narasi, kamera meja, dan kuis.
+        <br><strong>Langkah 5 (Uji Coba):</strong> Mengetes kamera dan tampilan di berbagai smartphone Android &amp; iPhone.
+        <br><strong>Langkah 6 (Peluncuran):</strong> Menerbitkan website ke internet lewat GitHub &amp; Netlify (Rp 0 selamanya).
+      </p>
+    </div>
+
     <div class="step-list">
       <div class="step-item">
         <h3>Tahap 1: Perencanaan Materi Kurikulum & Profil Sekolah</h3>
@@ -794,6 +817,21 @@
     <p>
       Berikut adalah ringkasan alur pemrosesan data di balik layar pada masing-masing fitur:
     </p>
+
+    <div style="margin: 24px 0; text-align: center;">
+      <img src="public/images/diagram-cara-kerja-ar.svg" alt="Peta Visual Cara Kerja 4 Fitur Media AR" style="width: 100%; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+    </div>
+
+    <div class="highlight-card" style="margin-bottom: 24px;">
+      <strong>💡 Cara Membaca Panel di Atas:</strong>
+      <p style="margin-top: 6px; margin-bottom: 0; font-size: 14px;">
+        Setiap mode belajar memiliki fungsi dan cara kerja khusus:
+        <br><strong>Mode 1 (Eksplorasi 3D):</strong> Memuat patung digital 3D dan membacakan teks dengan suara wanita Indonesia.
+        <br><strong>Mode 2 (Kamera Meja):</strong> Mengaktifkan kamera HP dan menempelkan lambang Garuda di meja belajar serta bisa difoto.
+        <br><strong>Mode 3 (3D Nyata di Ruangan):</strong> Menggunakan sensor canggih HP untuk mendeteksi lantai/meja sehingga patung Garuda berdiri tegak di ruangan nyata.
+        <br><strong>Mode 4 (Kuis Nilai):</strong> Memvalidasi jawaban benar/salah secara instan dan menampilkan pembahasan guru serta skor akhir (0–100).
+      </p>
+    </div>
 
     <table>
       <thead>
