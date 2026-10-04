@@ -5,262 +5,310 @@
 ---
 
 ## DAFTAR ISI
-1. **Ringkasan Proyek & Tujuan Media**
-2. **Pengertian Teknologi yang Ada di Dalam Website**
-3. **Bagaimana Sebenarnya Web & AR Ini Dibuat?**
-4. **Alur Pembuatan Proyek (Step-by-Step dari Awal Sampai Online)**
-5. **Panduan Lengkap Penggunaan Fitur AR (Untuk Guru & Siswa)**
-6. **Tanya-Jawab Teknis Populer (FAQ & Troubleshooting)**
+1. **Ringkasan Proyek & Tujuan Pembuatan Media**
+2. **Daftar Lengkap Teknologi & Perangkat yang Digunakan (Alat & Bahan)**
+3. **Alur Kronologis Pembuatan: Apa Dulu yang Dibangun, Lalu Kelanjutannya Bagaimana?**
+4. **Cara Kerja Teknis Setiap Fitur AR (Bagaimana Fitur Tersebut Berjalan)**
+5. **Panduan Lengkap Penggunaan Fitur AR (Untuk Guru & Siswa di Kelas)**
+6. **Tanya-Jawab Teknis, Pemecahan Masalah (Troubleshooting) & Biaya Perawatan**
 
 ---
 
-## 1. Ringkasan Proyek & Tujuan Media
+## 1. Ringkasan Proyek & Tujuan Pembuatan Media
 
 ### Apa Sebenarnya Proyek Ini?
-Proyek ini adalah pembuatan **Website Resmi Profil SDN Pakis V Surabaya** yang di dalamnya diintegrasikan sebuah modul inovasi khusus berupa **Media Pembelajaran Interaktif Berbasis WebAR (Web Augmented Reality)** dengan tema **Lambang Negara Garuda Pancasila**.
+Proyek ini adalah pembuatan **Website Resmi Profil SDN Pakis V Surabaya** yang di dalamnya diintegrasikan sebuah modul inovasi khusus berupa **Media Pembelajaran Interaktif Berbasis WebAR (Web Augmented Reality)** dengan materi **Simbol & Lambang Negara Garuda Pancasila**.
 
 ### Mengapa Media Ini Dibuat?
-- **Masalah Pembelajaran Tradisional:** Selama ini pembelajaran materi simbol dan lambang negara di Sekolah Dasar umumnya hanya menggunakan gambar dua dimensi (2D) di buku paket atau poster dinding kelas yang bersifat pasif dan datar.
-- **Karakteristik Siswa SD:** Siswa usia sekolah dasar membutuhkan media peraga yang nyata, visual, dan konkret agar materi yang dipelajari tidak abstrak dan mudah diingat.
-- **Solusi yang Dihadirkan:** Website ini menghadirkan replika patung 3D Garuda Pancasila yang bisa diputar 360 derajat, bersuara otomatis, serta bisa dimunculkan langsung ke dunia nyata melalui kamera HP/laptop siswa menggunakan teknologi Augmented Reality (AR) tanpa perlu download aplikasi apapun.
+- **Masalah Pembelajaran Tradisional:** Di sekolah dasar, pembelajaran Pendidikan Pancasila materi simbol negara umumnya hanya mengandalkan buku paket teks atau gambar 2D datar di dinding. Siswa dituntut menghafal secara pasif tanpa melihat visual nyata.
+- **Karakteristik Siswa SD (Tahap Operasional Konkret):** Berdasarkan psikologi perkembangan anak, siswa usia sekolah dasar (7–12 tahun) sangat membutuhkan media pembelajaran yang visual, nyata, dan konkret agar materi tidak terasa abstrak dan membosankan.
+- **Solusi yang Dihadirkan:** Website ini menghadirkan replika patung 3D Garuda Pancasila yang bisa diputar 360 derajat, dilengkapi pembaca suara otomatis, serta dapat dimunculkan langsung ke dunia nyata (di atas meja belajar atau lantai kelas) menggunakan kamera HP/laptop siswa melalui teknologi Augmented Reality (AR) tanpa perlu mengunduh aplikasi tambahan dari PlayStore/AppStore.
 
 ---
 
-## 2. Pengertian Teknologi yang Ada di Dalam Website
+## 2. Daftar Lengkap Teknologi & Perangkat yang Digunakan
 
-Semua teknologi yang dipakai di website ini dipilih agar **sangat cepat dibuka, ramah untuk anak-anak, dan 100% gratis tanpa biaya langganan**. Berikut penjelasan fungsi masing-masing teknologi dalam bahasa sederhana:
-
-### A. Teknologi Antarmuka & Tampilan Website
-1. **Website Berbasis Web (Bukan Aplikasi PlayStore / AppStore):**
-   - *Artinya:* Media ini berbentuk halaman web yang cukup dibuka menggunakan aplikasi browser biasa (Google Chrome, Safari, atau Edge) melalui link URL.
-   - *Fungsi & Keuntungan:* Siswa, guru, maupun wali murid tidak perlu mengunduh (*install*) aplikasi berat berukuran ratusan Megabyte yang sering ditolak karena memori HP penuh. Cukup klik link, website langsung terbuka.
-
-2. **React (Pondasi Pemrograman Tampilan):**
-   - *Artinya:* Teknologi penyusun tampilan web modern buatan Meta (Facebook) yang cara kerjanya seperti menyusun balok lego.
-   - *Fungsi di Proyek:* Halaman web dibagi menjadi balok-balok kecil mandiri (disebut *komponen*), seperti komponen Profil, komponen Berita, komponen Kamera AR, dan komponen Kuis. Jika kita ingin mengubah teks profil sekolah atau soal kuis, kita cukup mengganti balok komponen tersebut tanpa merusak bagian web yang lain.
-
-3. **Vite (Mesin Perakit Kilat):**
-   - *Artinya:* Alat pengemas (*bundler*) kode program modern yang bertugas merapikan dan mengecilkan ukuran seluruh file web sebelum diterbitkan ke internet.
-   - *Fungsi di Proyek:* Membuat website memuat gambar dan halaman dalam hitungan milidetik sehingga tidak lemot saat dibuka di HP dengan koneksi internet terbatas.
-
-4. **Tailwind CSS (Perias Desain & Tata Letak):**
-   - *Artinya:* Sistem penataan gaya (*styling*) tampilan web yang mengatur tata letak, warna, ukuran tulisan, dan animasi.
-   - *Fungsi di Proyek:* Menjamin tampilan website rapi dan responsif. Artinya, tata letak otomatis menyesuaikan ukuran layar—baik dibuka di layar laptop guru, tablet, maupun layar HP siswa yang kecil. Tombol-tombol dibuat besar dan berwarna kontras agar nyaman disentuh jari anak-anak.
-
----
-
-### B. Teknologi 3D & Augmented Reality (AR)
-1. **Model 3D Format `.GLB` (Patung Digital Garuda):**
-   - *Artinya:* Berkas (*file*) patung digital 3 dimensi. Format `.glb` adalah format standar internasional untuk objek 3D di internet (ibarat format `.mp3` untuk lagu atau `.mp4` untuk video).
-   - *Fungsi di Proyek:* Objek Garuda Pancasila memiliki volume ruang nyata (panjang, lebar, tinggi, dan sudut 360 derajat), lengkap dengan perisai 5 sila dan pita Bhinneka Tunggal Ika. Ukuran filenya sudah dioptimalkan dan dikompresi sangat ringan (hanya sekitar ~580 KB) sehingga hemat kuota internet siswa.
-
-2. **Three.js & Google Model-Viewer (Mesin Penampil 3D Web):**
-   - *Artinya:* Perangkat lunak khusus penampil 3D di browser yang dikembangkan oleh Google dan komunitas web global.
-   - *Fungsi di Proyek:* Menjadikan browser Google Chrome di HP maupun laptop mampu memutar, memperbesar (*zoom*), dan menggerakkan patung Garuda 3D secara mulus tanpa memerlukan kartu grafis (*VGA*) komputer yang mahal.
-
-3. **WebAR (Web Augmented Reality):**
-   - *Artinya:* Teknologi yang menggabungkan dunia maya dengan dunia nyata secara langsung melalui kamera browser web.
-   - *Fungsi di Proyek:* Ada 2 jenis AR yang disediakan di web ini:
-     - **AR Mode Kamera Interaktif (Webcam AR):** Menggunakan kamera laptop atau kamera HP, lalu menempelkan lambang Garuda di atas rekaman video kamera secara live. Siswa bisa menggeser lambang Garuda ke meja belajarnya, memperbesar/memperkecil, memutar posisi, dan memotret hasilnya.
-     - **Native AR (3D Nyata di Ruangan):** Memanfaatkan sensor kamera dan sensor gerak (*gyroscope*) pada smartphone canggih (fitur ARCore di Android / QuickLook di iPhone). HP mendeteksi permukaan lantai atau meja kelas secara otomatis, lalu meletakkan patung 3D Garuda berdimensi nyata di atas meja tersebut. Siswa bisa berjalan mengelilingi meja untuk melihat patung Garuda dari sisi depan, samping, maupun belakang.
-
-4. **Webcam Stream (`getUserMedia`):**
-   - *Artinya:* Fitur izin akses kamera yang aman di browser.
-   - *Fungsi di Proyek:* Ketika pengguna menekan tombol *"Nyalakan Kamera AR"*, browser akan meminta izin sopan kepada pengguna untuk menyalakan kamera. Tidak ada rekaman yang dikirim ke internet, semua pemrosesan video terjadi langsung di dalam perangkat siswa sehingga aman untuk privasi anak.
-
----
-
-### C. Teknologi Fitur Pendukung Pembelajaran
-1. **Web Speech API (Text-to-Speech / Suara Narasi Otomatis):**
-   - *Artinya:* Teknologi pintar yang secara otomatis membaca teks tulisan menjadi suara manusia asli berbahasa Indonesia.
-   - *Fungsi di Proyek:* Ketika siswa menekan tombol speaker di bawah lambang sila (misal: Sila ke-1 Bintang), website otomatis membacakan makna sila dan contoh perilakunya dengan suara wanita yang ramah. Fitur ini sangat membantu siswa kelas rendah yang belum lancar membaca (mengakomodasi gaya belajar auditori).
-
-2. **Mesin Kuis Interaktif:**
-   - *Artinya:* Sistem evaluasi otomatis yang memvalidasi jawaban pilihan ganda siswa seketika.
-   - *Fungsi di Proyek:* Siswa langsung tahu apakah jawabannya Benar atau Salah detik itu juga, disertai kotak penjelasan tambahan dari guru dan perolehan skor akhir (skala 100).
-
----
-
-### D. Teknologi Penyimpanan & Penerbitan Online (Gratis Rp 0)
-1. **GitHub (Gudang Arsip Kode Proyek):**
-   - *Artinya:* Tempat penyimpanan berkas-berkas proyek website secara aman di awan (*cloud*), lengkap dengan riwayat setiap perubahan file.
-2. **Netlify (Server Hosting Cloud):**
-   - *Artinya:* Komputer server di internet yang bertugas menyiarkan website ini 24 jam sehari tanpa henti ke seluruh dunia.
-   - *Fungsi di Proyek:* Menyediakan link website resmi dengan sertifikat keamanan gembok hijau (**HTTPS**). Server ini menggunakan paket gratis selamanya (*Free Tier*) yang cukup untuk melayani ribuan kunjungan siswa per bulan.
-3. **Total Biaya Pemeliharaan:**
-   - **Rp 0 (100% Gratis)**. Tidak ada API berbayar, tidak ada database langganan bulanan, dan tidak ada biaya perpanjangan server.
-
----
-
-## 3. Bagaimana Sebenarnya Web & AR Ini Dibuat?
-
-Berikut penjelasan nyata mengenai bagaimana website dan fitur AR-nya dirakit dari nol:
+Agar jelas *"dibangun pakai apa saja"*, berikut adalah rincian seluruh perangkat lunak, bahasa pemrograman, pustaka (*library*), dan teknologi yang digunakan dalam proyek ini beserta fungsinya masing-masing dalam bahasa yang mudah dipahami:
 
 ```text
-[ 1. RANCANG KONTEN ]   --> Mengumpulkan materi 5 sila, makna bulu 17-8-1945 & profil sekolah
-        ↓
-[ 2. SIAPKAN ASET 3D ]  --> Membuat patung digital Garuda .GLB & gambar transparan lambang
-        ↓
-[ 3. BIKIN KERANGKA WEB]--> Menyusun struktur halaman (Beranda, Profil, Media AR, Berita, dll)
-        ↓
-[ 4. RAKIT 4 FITUR AR ] --> Memprogram 3D Viewer, Kamera Interaktif, Native AR, & Kuis
-        ↓
-[ 5. UJI COBA (TESTING)]--> Mengetes di HP & Laptop (cek kamera, tombol, ukuran huruf)
-        ↓
-[ 6. ONLINE-KAN (DEPLOY)]--> Mengunggah kode ke GitHub dan menyambungkannya ke Netlify
+====================================================================================
+                        ARSITEKTUR TEKNOLOGI PROYEK
+====================================================================================
+[ Antarmuka Web ]  --> React 19 + Vite + Tailwind CSS + Lucide Icons
+[ Pengolah 3D ]    --> Blender (Format .GLB / glTF 2.0) + Three.js + Model-Viewer
+[ Kamera & AR ]    --> WebAR + WebRTC (getUserMedia API) + HTML5 Canvas
+[ Audio & Kuis ]   --> Web Speech API (Text-to-Speech) + React State Management
+[ Server & Cloud ] --> Node.js + Git + GitHub Repository + Netlify Cloud (HTTPS)
+====================================================================================
 ```
 
-### Rincian Proses Pembuatannya:
+### A. Perangkat Lunak & Bahasa Pemrograman Website (Frontend)
+1. **HTML5 (Hypertext Markup Language versi 5):**
+   - *Fungsi:* Menjadi kerangka dasar seluruh halaman web (menentukan letak judul, teks, gambar, video kamera, tombol navigasi, dan kanvas 3D).
+2. **CSS3 & Tailwind CSS (Sistem Tata Letak & Desain Modern):**
+   - *Fungsi:* Mengatur keindahan tampilan web—mulai dari warna Biru Resmi (*Navy Blue*) dan Emas Kenegaraan (*Golden Amber*), ukuran tulisan, animasi transisi yang halus, hingga tata letak responsif (tampilan web otomatis menyesuaikan ukuran layar HP, tablet, maupun layar proyektor laptop).
+3. **JavaScript (ES6+) & JSX:**
+   - *Fungsi:* Bahasa pemrograman yang memberi "otak" dan logika interaktivitas pada website. Mengatur agar tombol bisa diklik, menghitung skor kuis, mengaktifkan kamera, dan memutar patung 3D saat disentuh jari.
+4. **React 19 (Pondasi Pemrograman Berbasis Komponen):**
+   - *Fungsi:* Teknologi tampilan web modern buatan Meta (Facebook). Cara kerjanya seperti menyusun balok lego mandiri (*komponen*). Website dipecah menjadi komponen Profil, komponen Berita, komponen Kamera AR, komponen 3D Explorer, dan komponen Kuis. Jika ingin mengubah satu bagian, bagian lain tidak akan rusak.
+5. **Vite (Mesin Perakit Kilat / Build Tool):**
+   - *Fungsi:* Alat pengemas kode generasi baru yang merapikan dan mengompresi ribuan baris kode menjadi file kecil siap tayang. Vite membuat website memuat halaman dalam hitungan milidetik sehingga sangat hemat kuota dan tidak lemot di HP siswa.
+6. **Lucide React (Ikonografi Visual):**
+   - *Fungsi:* Menyediakan ikon-ikon interaktif yang ramah anak, seperti ikon kamera, speaker suara, rotasi putar, panah maju-mundur, centang hijau kuis, dan tombol reset.
 
-#### Langkah 1: Merancang Konten & Struktur Informasi
-- Materi kurikulum disusun berdasarkan muatan Pendidikan Pancasila tingkat SD (Capaian Pembelajaran Fase B/Kelas 4):
-  - Membedah 5 Sila: Bintang Emas, Rantai Baja, Pohon Beringin, Kepala Banteng, serta Padi & Kapas.
-  - Menghubungkan contoh pengamalan yang konkret di sekolah (misal: Sila 1 berdoa sebelum belajar, Sila 2 menolong teman yang jatuh, Sila 3 tidak membeda-bedakan suku teman, Sila 4 musyawarah memilih ketua kelas, Sila 5 hidup hemat dan adil).
-  - Merangkum filosofi angka kemerdekaan pada bulu Garuda (17 helai sayap, 8 helai ekor, 19 helai pangkal ekor, 45 helai leher).
-  - Menyusun 4 butir soal evaluasi pemahaman beserta penjelasannya.
+---
 
-#### Langkah 2: Pembuatan dan Optimasi Aset 3D
-- Lambang burung Garuda dibuat dalam bentuk model patung digital 3 dimensi.
-- Model ini diwarnai dengan tekstur emas, perisai merah-putih, dan pita cengkeraman bertuliskan "Bhinneka Tunggal Ika".
-- Agar file tidak berat saat diakses siswa lewat HP, model tersebut di-*compress* (dikecilkan) ke format `.glb` dengan ukuran sangat ringkas (~580 Kilobyte).
-- Disiapkan pula gambar resolusi tinggi berlatar belakang transparan (`.png` dan `.svg`) untuk keperluan mode kamera interaktif.
+### B. Teknologi Pembuatan & Penampil 3D
+1. **Perangkat Lunak Pemodelan 3D (Blender / 3D Modeling Software):**
+   - *Fungsi:* Software untuk membentuk geometri patung burung Garuda Pancasila secara digital—mulai dari sayap, ekor, cakar pita Bhinneka Tunggal Ika, hingga perisai 5 sila di dada.
+2. **Format Berkas `.GLB` (glTF 2.0 / GL Transmission Format):**
+   - *Fungsi:* Format standar internasional untuk benda 3D di internet (ibarat format MP3 untuk musik atau MP4 untuk video). File 3D Garuda dioptimalkan dan dikompresi hingga ukurannya sangat kecil, yaitu **hanya ~580 KB** (kurang dari 1 MB), sehingga sangat cepat diunduh meski sinyal internet di sekolah pas-pasan.
+3. **Three.js (Mesin Grafis 3D Web):**
+   - *Fungsi:* Pustaka grafis JavaScript yang menghitung pencahayaan, bayangan, kedalaman ruang, dan sudut pandang kamera 3D di browser tanpa memerlukan komputer dengan VGA mahal.
+4. **Google `<model-viewer>` (Komponen Resmi Web 3D & AR dari Google):**
+   - *Fungsi:* Komponen web resmi yang memungkinkan browser menampilkan patung 3D secara interaktif sekaligus memicu sensor AR pada smartphone (mendukung teknologi Google ARCore di Android dan Apple Quick Look di iPhone).
 
-#### Langkah 3: Perakitan Halaman Website (Frontend)
-- Membuat struktur navigasi utama: Beranda, Profil SDN Pakis V, Media AR, Berita Sekolah, Prestasi, Ekstrakurikuler, Rekap Kegiatan, dan Perangkat Belajar.
-- Menentukan tema warna visual: Menggunakan kombinasi warna Biru Resmi (*Navy Blue*) dan Emas Kenegaraan (*Golden Amber*), sesuai identitas pendidikan dan lambang Garuda.
-- Menggunakan jenis huruf (*font*) *Plus Jakarta Sans* yang bulat, tegas, dan mudah dibaca oleh mata anak-anak.
+---
 
-#### Langkah 4: Perakitan 4 Mode Pembelajaran AR
-Bagian Media AR dipecah menjadi 4 tab menu belajar agar siswa dapat memilih sesuai kondisi perangkat yang mereka pegang:
-1. **Mode 1 - Eksplorasi 3D & Suara:** Mengintegrasikan model 3D Garuda ke layar. Dibuat sistem tombol sentuh 5 sila. Saat siswa menekan lambang Bintang, layar otomatis menampilkan makna sila ke-1 dan memicu suara narasi audio Indonesia.
-2. **Mode 2 - Kamera WebAR Interaktif:** Menghubungkan kamera perangkat ke kanvas layar. Di atas tampilan kamera, diletakkan gambar Garuda yang bisa diatur posisinya (drag & drop menggunakan sentuhan jari atau mouse), diperbesar/perkecil dengan slider ukuran, diputar dengan slider derajat rotasi, dan dilengkapi tombol foto seketika untuk menyimpan gambar ke galeri HP.
-3. **Mode 3 - Patung 3D Nyata di Ruangan:** Memasang modul `<model-viewer>` Google yang memiliki kemampuan mengenali bidang datar (meja/lantai) lewat sensor ARCore/QuickLook di smartphone.
-4. **Mode 4 - Kuis Pendidikan Pancasila:** Membuat sistem kuis 4 soal pilihan ganda interaktif lengkap dengan sistem perhitungan skor otomatis, batang indikator progres, dan tombol pengulangan kuis.
+### C. Teknologi Fitur Kamera & Augmented Reality (WebAR)
+1. **WebAR (Web Augmented Reality):**
+   - *Fungsi:* Teknologi AR yang berjalan langsung di dalam browser web (Google Chrome atau Safari). Berbeda dengan AR lama yang mewajibkan pengguna mengunduh aplikasi 100–300 MB dari Google PlayStore, WebAR cukup dibuka lewat link URL website.
+2. **WebRTC & API Akses Kamera (`navigator.mediaDevices.getUserMedia`):**
+   - *Fungsi:* Jalur izin resmi browser untuk menyalakan kamera HP atau webcam laptop siswa secara *real-time*. Seluruh pemrosesan video dilakukan langsung di dalam HP pengguna (tidak ada video yang dikirim ke internet), sehingga 100% aman bagi privasi anak-anak.
+3. **HTML5 `<canvas>` API (Mesin Penggabung Foto):**
+   - *Fungsi:* Ketika tombol "Foto Bersama AR" ditekan, mesin Canvas secara otomatis menangkap rekaman video kamera dan menumpuk gambar Garuda di atasnya, lalu menyatukannya menjadi sebuah file foto format PNG yang langsung terunduh ke galeri HP siswa.
 
-#### Langkah 5: Pengujian Perangkat (Testing)
-- Diuji pada layar laptop (Chrome, Edge, Safari).
-- Diuji pada berbagai smartphone Android dan iPhone: memastikan kamera langsung menyala saat diizinkan, tombol tidak tumpang tindih, dan tulisan tidak kekecilan.
-- Memastikan tombol-tombol memiliki kontras warna yang tajam (misal tombol kuning emas dengan tulisan hitam pekat) agar tidak menyatu dengan warna latar belakang.
+---
 
-#### Langkah 6: Publikasi ke Internet (Deployment)
+### D. Fitur Suara Otomatis & Logika Kuis
+1. **Web Speech API (Text-to-Speech Otomatis Bahasa Indonesia):**
+   - *Fungsi:* Fitur cerdas bawaan browser yang mengubah tulisan naskah menjadi suara manusia asli berbahasa Indonesia (`id-ID`). Suara ini ramah anak dan otomatis membacakan makna 5 sila saat tombol speaker ditekan, tanpa perlu menyewa pengisi suara atau membayar langganan server audio.
+2. **React State Management (`useState`, `useEffect`, `useRef`):**
+   - *Fungsi:* Sistem memori internal web yang mencatat secara akurat: tab mana yang sedang aktif, berapa soal yang sudah dijawab siswa, berapa skor nilai yang diraih, serta koordinat letak geser (*drag*) lambang Garuda di meja.
+
+---
+
+### E. Lingkungan Pengembangan & Server Publikasi Online (Hosting)
+1. **Node.js & NPM (Node Package Manager):**
+   - *Fungsi:* Lingkungan kerja di komputer pengembang untuk menginstal dan mengelola pustaka-pustaka pendukung proyek secara rapi.
+2. **Git & GitHub (Repositori Kode Sumber):**
+   - *Fungsi:* Lemari arsip digital di internet (`AbdulGhoni109/sdn-pakis-v`) yang menyimpan seluruh kode program proyek secara aman lengkap dengan riwayat revisinya.
+3. **Netlify Cloud Hosting (Server Siar 24 Jam):**
+   - *Fungsi:* Server internet modern yang menyiarkan website ini ke seluruh dunia secara otomatis selama 24 jam sehari. Dilengkapi tautan aman resmi berkeamanan gembok hijau (**HTTPS**).
+4. **Total Biaya Pengadaan & Pemeliharaan:**
+   - **Rp 0 (100% Gratis Seumur Hidup)**. Tidak ada API berbayar, tidak ada langganan server, dan tidak ada biaya perawatan bulanan.
+
+---
+
+## 3. Alur Kronologis Pembuatan: Apa Dulu yang Dibangun, Lalu Kelanjutannya Bagaimana?
+
+Berikut adalah alur langkah kerja nyata dari hari pertama sampai website terbit secara online:
+
+```text
+TAHAP 1: Perencanaan Materi Kurikulum & Profil Sekolah
+   ↓
+TAHAP 2: Pembuatan Fondasi & Struktur Dasar Web (Vite + React)
+   ↓
+TAHAP 3: Pembuatan Halaman Informasi Profil Sekolah SDN Pakis V
+   ↓
+TAHAP 4: Pemodelan & Kompresi Aset Patung 3D Garuda Pancasila (.GLB)
+   ↓
+TAHAP 5: Perancangan Basis Data Edukasi (Makna Sila, Anatomi & Kuis)
+   ↓
+TAHAP 6: Pemrograman 4 Modul Fitur Pembelajaran Media AR
+   ↓
+TAHAP 7: Integrasi Modul AR ke Navigasi Website Utama
+   ↓
+TAHAP 8: Pengujian di Berbagai Perangkat (Laptop, HP Android & iPhone)
+   ↓
+TAHAP 9: Peluncuran ke Internet Melalui GitHub & Netlify (Deploy)
+```
+
+---
+
+### Rincian Lengkap Setiap Tahap Pembangunan:
+
+#### Tahap 1: Perencanaan Materi Kurikulum & Profil Sekolah
+- **Apa yang dibuat pertama kali?**
+  Mengumpulkan seluruh data teks profil resmi SDN Pakis V/372 Surabaya (Visi, Misi, data fasilitas, profil guru, berita sekolah, ekstrakurikuler, dan prestasi).
+- **Materi Edukasi:**
+  Menyelaraskan materi dengan Kurikulum Merdeka Fase B (Kelas 4 SD) muatan Pendidikan Pancasila. Menulis naskah arti lambang 5 sila, contoh perilaku baik di lingkungan sekolah, makna angka kemerdekaan pada bulu burung Garuda (17-8-1945), serta membuat 4 butir soal evaluasi pemahaman anak.
+
+#### Tahap 2: Pembuatan Fondasi & Struktur Dasar Web
+- Menginisiasi (*setup*) proyek web baru di komputer lokal menggunakan **Vite** dan **React 19**.
+- Memasang dan mengonfigurasi **Tailwind CSS** untuk standarisasi warna, tata letak, dan jenis font yang mudah dibaca anak (*Plus Jakarta Sans*).
+- Membuat struktur direktori proyek yang teratur:
+  - `src/components/` : Tempat komponen tombol, kartu informasi, dan modul AR.
+  - `src/pages/` : Tempat halaman-halaman web (Beranda, Profil, Media AR, Berita, dll).
+  - `src/data/` : Tempat naskah teks sekolah dan bank soal.
+  - `public/models/` : Tempat menyimpan file patung 3D `.glb`.
+  - `public/images/` : Tempat menyimpan foto sekolah dan logo lambang Garuda.
+
+#### Tahap 3: Pembuatan Halaman Informasi Profil Sekolah
+- Sebelum masuk ke AR, bagian website sekolah dibangun terlebih dahulu:
+  1. **Navbar (Menu Atas):** Menu navigasi yang responsif dan fleksibel.
+  2. **Beranda (Hero Section):** Menampilkan sambutan kepala sekolah dan foto sekolah.
+  3. **Profil & Visi Misi:** Menampilkan sejarah sekolah dan komitmen mutu pendidikan.
+  4. **Fasilitas & Tenaga Pendidik:** Menampilkan sarana belajar dan profil dewan guru.
+  5. **Berita, Prestasi & Ekstrakurikuler:** Menampilkan prestasi siswa dan kegiatan pramuka/ekskul.
+  6. **Footer:** Bagian bawah website berisi alamat, kontak, dan tautan resmi sekolah.
+
+#### Tahap 4: Pemodelan & Kompresi Aset Patung 3D Garuda
+- Menyiapkan objek patung 3D burung Garuda Pancasila dengan tekstur warna emas, perisai merah-putih di dada, dan pita cengkeraman kaki bertuliskan *"Bhinneka Tunggal Ika"*.
+- **Optimasi Ukuran File:** Mengompresi file 3D ke format standar web `.glb` dengan ukuran **~580 KB** agar tidak membebani memori HP siswa saat diakses.
+- Menyiapkan gambar lambang Garuda resolusi tinggi tanpa latar belakang (transparan format PNG dan SVG) untuk digunakan pada fitur kamera AR.
+
+#### Tahap 5: Perancangan Basis Data Edukasi (`pancasilaData.js`)
+- Seluruh teks materi pembelajaran disimpan ke dalam file data terstruktur (`src/data/pancasilaData.js`):
+  - *Data 5 Sila:* Lambang bintang, rantai, beringin, banteng, padi-kapas; bunyi sila, makna perisai, contoh perilaku konkret di sekolah, dan kalimat narasi suara.
+  - *Data Anatomi Bulu:* 17 bulu sayap, 8 bulu ekor, 19 bulu pangkal ekor, 45 bulu leher (tanggal proklamasi 17 Agustus 1945).
+  - *Data Kuis:* 4 butir soal pilihan ganda, kunci jawaban, dan kotak penjelasan guru.
+
+#### Tahap 6: Pemrograman 4 Modul Fitur Pembelajaran Media AR
+Setelah aset dan data siap, dibuat halaman utama `MediaAR.jsx` yang menaungi 4 komponen sub-fitur:
+1. **Membangun Mode 1 (ThreeDExplorer.jsx):**
+   Menampilkan patung 3D Garuda di layar yang bisa diputar 360 derajat. Menghubungkannya dengan tombol 5 sila dan tombol anatomi bulu. Memasang **Web Speech API** agar saat tombol speaker ditekan, suara narasi otomatis membacakan materi dalam bahasa Indonesia.
+2. **Membangun Mode 2 (WebcamARViewer.jsx):**
+   Membangun fitur kamera interaktif:
+   - Menulis kode permintaan izin kamera ke browser (`getUserMedia`).
+   - Menampilkan video kamera langsung di layar.
+   - Meletakkan gambar transparan lambang Garuda di atas rekaman video.
+   - Membuat fungsi sentuh/geser (*drag and drop*) sehingga siswa bisa menggeser lambang Garuda ke meja belajarnya.
+   - Menambahkan slider pengatur ukuran (skala), slider putaran (rotasi), dan efek pendaran cahaya emas (*glow*).
+   - Menambahkan tombol "Foto Bersama AR" yang menggunakan Canvas API untuk menggabungkan video dan lambang Garuda menjadi foto PNG yang langsung tersimpan di galeri HP.
+3. **Membangun Mode 3 (NativeModelViewer.jsx):**
+   Memasang komponen `<model-viewer>` Google. Mode ini mendeteksi permukaan lantai atau meja kelas melalui sensor AR smartphone (Google ARCore di Android / QuickLook di iPhone), sehingga patung Garuda 3D dapat berdiri tegak di lantai kelas secara nyata. Dilengkapi fitur Kode QR agar siswa di depan laptop guru bisa langsung scan dan membuka mode ini di HP mereka.
+4. **Membangun Mode 4 (PancasilaQuiz.jsx):**
+   Membangun kuis pilihan ganda 4 soal interaktif. Dilengkapi umpan balik instan (tombol hijau jika benar, merah jika salah), kotak pembahasan guru, indikator progres, kartu skor akhir (0–100), dan tombol pengulangan kuis.
+
+#### Tahap 7: Integrasi Modul AR ke Navigasi Website Utama
+- Memasukkan komponen `<MediaAR />` ke dalam file induk `App.jsx`, diletakkan secara strategis di antara seksi Profil Sekolah dan seksi Berita.
+- Menambahkan tautan "Media AR" ke menu navigasi Navbar dan Footer sehingga siswa maupun guru dapat mengaksesnya dalam sekali klik dari halaman mana pun.
+
+#### Tahap 8: Pengujian di Berbagai Perangkat (Testing & Perbaikan Tampilan)
+- Diuji pada layar komputer/laptop menggunakan browser Google Chrome, Safari, dan Microsoft Edge.
+- Diuji langsung pada berbagai smartphone Android dan iPhone:
+  - Memastikan kamera belakang langsung menyala dengan lancar.
+  - Memperbaiki kontras warna tombol: misalnya tombol *"Nyalakan Kamera AR"* diubah menjadi warna emas solid dengan teks hitam pekat agar tidak menyatu dengan warna latar belakang.
+  - Memastikan respon sentuhan jari saat memutar 3D dan menggeser lambang di layar sentuh HP terasa mulus dan tidak lambat.
+
+#### Tahap 9: Peluncuran ke Internet (Deployment ke GitHub & Netlify)
 - Seluruh file proyek dikirim ke repositori GitHub (`AbdulGhoni109/sdn-pakis-v`).
-- Server Netlify dihubungkan langsung ke GitHub tersebut. Setiap kali ada berkas baru atau perbaikan, Netlify secara otomatis merakit ulang dan menyiarkan website versi terbaru dalam hitungan detik.
+- Server cloud Netlify dihubungkan langsung ke repositori GitHub tersebut.
+- Setiap kali ada berkas baru atau perbaikan, Netlify secara otomatis merakit ulang proyek dalam hitungan detik dan menyiarkannya ke alamat web resmi berkeamanan HTTPS yang bisa dibuka gratis oleh siswa kapan pun dari rumah.
 
 ---
 
-## 4. Alur Pembuatan Proyek (Step-by-Step dari Awal Sampai Online)
+## 4. Cara Kerja Teknis Setiap Fitur AR (Bagaimana Fitur Tersebut Berjalan)
 
-Jika diringkas secara kronologis dari hari pertama hingga website online, berikut urutan langkah nyatanya:
-
-| Tahapan | Pekerjaan yang Dilakukan | Hasil yang Didapat |
-|---|---|---|
-| **Tahap 1: Konsep & Materi** | Mengumpulkan informasi sekolah SDN Pakis V dan materi lambang Garuda Pancasila untuk kelas SD. | Naskah teks profil sekolah, naskah makna 5 sila, dan 4 butir soal kuis. |
-| **Tahap 2: Pengolahan Aset** | Menyiapkan logo sekolah, foto kegiatan, serta model 3D Garuda berformat `.glb` dan gambar transparan `.png`. | Berkas aset visual yang siap dimasukkan ke dalam folder proyek. |
-| **Tahap 3: Pembuatan Struktur Web** | Menginisiasi proyek web dengan React + Vite + Tailwind CSS. Membuat kerangka halaman dan menu navigasi. | Kerangka dasar website yang sudah bisa dibuka di komputer lokal. |
-| **Tahap 4: Pengembangan Fitur AR** | Menulis komponen visual 3D, menghubungkan kamera webcam, memasang suara narasi otomatis (*Text-to-Speech*), dan menyusun kuis interaktif. | Fitur Media AR interaktif lengkap dengan 4 mode belajar yang aktif. |
-| **Tahap 5: Desain & Responsivitas** | Menyesuaikan tampilan agar nyaman dilihat di layar HP, tablet, maupun laptop guru. Memperbaiki kontras warna tombol dan teks. | Tampilan website yang rapi dan mudah dioperasikan oleh anak-anak. |
-| **Tahap 6: Pengujian (Testing)** | Mengetes fitur kamera di berbagai HP, mencoba kuis, dan memastikan tidak ada eror saat memutar model 3D. | Website berjalan lancar tanpa kendala teknis. |
-| **Tahap 7: Peluncuran (Deploy)** | Menyimpan kode ke GitHub dan mempublikasikannya melalui Netlify. | Website resmi memiliki alamat tautan online yang aman (HTTPS) dan bisa diakses gratis oleh siapa saja. |
-
----
-
-## 5. Panduan Lengkap Penggunaan Fitur AR (Untuk Guru & Siswa)
-
-Bagian ini menjelaskan cara mengoperasikan 4 mode belajar di menu **Media AR**:
+Agar dapat memahami bagaimana masing-masing fitur bekerja di balik layar, berikut penjelasannya:
 
 ```text
-===========================================================
-               MENU UTAMA: MEDIA AR GARUDA
------------------------------------------------------------
-[Tab 1] Eksplorasi 3D & Suara  --> Putar 360° + Dengarkan Audio
-[Tab 2] Kamera Interaktif     --> Tampilkan Garuda di Meja HP
-[Tab 3] 3D Nyata di Ruangan   --> Patung AR Berdiri di Lantai
-[Tab 4] Kuis Pancasila        --> Uji Pemahaman Mandiri
-===========================================================
++-----------------------------------------------------------------------------------+
+| FITUR 1: EKSPLORASI 3D & SUARA                                                    |
+| Browser memuat file .GLB -> Three.js merender objek 3D -> Siswa menggeser layar   |
+| -> Objek berputar 360° -> Klik lambang sila -> Suara narasi berbahasa Indonesia   |
++-----------------------------------------------------------------------------------+
+| FITUR 2: KAMERA WEBAR INTERAKTIF                                                  |
+| Izin kamera disetujui -> Video live tampil di layar -> Lambang Garuda ditempel    |
+| di atas video -> Siswa menggeser lambang ke meja belajar -> Klik tombol foto      |
+| -> Canvas API menyatukan video + gambar -> Foto otomatis tersimpan di galeri HP   |
++-----------------------------------------------------------------------------------+
+| FITUR 3: 3D NYATA DI RUANGAN (NATIVE WEBAR)                                       |
+| Scan QR Code di HP -> Google Model-Viewer mendeteksi lantai/meja melalui sensor   |
+| kamera & gyroscope HP -> Patung 3D Garuda muncul berdiri di atas meja nyata       |
+| -> Siswa bisa berjalan mengelilingi patung dari sisi depan, samping, dan belakang |
++-----------------------------------------------------------------------------------+
+| FITUR 4: KUIS PENDIDIKAN PANCASILA                                                |
+| Siswa memilih jawaban A/B/C/D -> Sistem memvalidasi detik itu juga -> Tombol      |
+| berubah hijau/merah -> Kotak penjelasan guru muncul -> Skor akhir dihitung        |
++-----------------------------------------------------------------------------------+
 ```
+
+---
+
+## 5. Panduan Lengkap Penggunaan Fitur AR (Untuk Guru & Siswa di Kelas)
+
+Berikut adalah panduan langkah demi langkah saat memanfaatkan menu **Media AR** dalam kegiatan belajar-mengajar di kelas:
 
 ### Mode 1: Eksplorasi 3D & Suara
-- **Cocok Untuk:** Pembelajaran klasikal di depan kelas menggunakan proyektor laptop guru, atau eksplorasi mandiri di HP.
-- **Cara Menggunakannya:**
+- **Tujuan Pembelajaran:** Mengamati bentuk fisik lambang negara secara menyeluruh dari segala sisi dan mendengarkan penjelasan audio.
+- **Langkah Penggunaan:**
   1. Klik tab **"Eksplorasi 3D & Suara"**.
-  2. Gunakan jari (di layar sentuh HP) atau kursor mouse (di laptop) untuk menggeser dan memutar patung Garuda 3D ke segala arah (360 derajat). Gunakan dua jari untuk memperbesar (*zoom in*) atau memperkecil (*zoom out*).
-  3. Di bawah patung, klik salah satu dari 5 lambang sila (Bintang, Rantai, Beringin, Banteng, Padi & Kapas).
-  4. Baca penjelasan makna dan contoh perilakunya di sekolah.
-  5. Klik tombol berikon speaker **"Dengarkan Narasi Suara"** untuk mendengarkan website membacakan penjelasannya secara otomatis.
-  6. Klik tab **"Anatomi 17-8-1945"** untuk melihat rahasia jumlah bulu kemerdekaan pada tubuh Garuda.
+  2. Sentuh dan geser patung Garuda di layar untuk memutarnya 360 derajat. Gunakan dua jari untuk memperbesar (*zoom in*).
+  3. Klik salah satu dari 5 lambang sila di bagian bawah layar (Bintang, Rantai, Beringin, Banteng, Padi & Kapas).
+  4. Baca makna lambang dan contoh pengamalannya di lingkungan sekolah.
+  5. Tekan tombol speaker **"Dengarkan Narasi Suara"** agar website membacakan penjelasan materi dengan suara ramah anak secara otomatis.
+  6. Klik tab **"Anatomi 17-8-1945"** untuk mempelajari rahasia jumlah bulu sayap, ekor, dan leher burung Garuda.
 
 ---
 
 ### Mode 2: Kamera WebAR Interaktif
-- **Cocok Untuk:** Pembelajaran interaktif di kelas menggunakan kamera HP siswa atau webcam laptop.
-- **Cara Menggunakannya:**
+- **Tujuan Pembelajaran:** Menghadirkan lambang Garuda tepat di atas meja belajar siswa menggunakan kamera dan mengambil foto hasil karya belajar.
+- **Langkah Penggunaan:**
   1. Klik tab **"Kamera WebAR Interaktif"**.
-  2. Klik tombol besar berwarna kuning emas: **"Nyalakan Kamera AR"**.
-  3. Ketika browser memunculkan kotak pertanyaan: *"Izinkan website menggunakan kamera Anda?"*, pilih **"Izinkan" (Allow)**.
-  4. Kamera akan menyala dan menampilkan suasana ruangan kelas / meja belajar secara langsung di layar.
-  5. Lambang Garuda Pancasila akan muncul melayang di atas rekaman kamera:
-     - **Geser Posisi:** Sentuh dan tahan gambar Garuda, lalu geser ke titik meja yang diinginkan.
-     - **Atur Ukuran:** Geser slider *"Ukuran Lambang"* ke kiri untuk memperkecil atau ke kanan untuk memperbesar.
-     - **Atur Sudut:** Geser slider *"Rotasi Derajat"* untuk memutar kemiringan lambang Garuda.
-     - **Efek Cahaya:** Centang opsi *"Efek Cahaya Emas"* untuk memberikan pendaran cahaya berkilau di belakang lambang.
-  6. Klik tombol hijau **"Foto Bersama AR"**: Gambar di layar akan langsung difoto dan diunduh otomatis ke galeri HP / laptop sebagai hasil karya belajar siswa.
-  7. Jika kelas tidak memiliki kamera, siswa dapat mengklik tombol **"Gunakan Simulasi Meja"** untuk belajar dengan latar belakang meja virtual.
+  2. Tekan tombol emas besar: **"Nyalakan Kamera AR"**.
+  3. Ketika browser memunculkan pertanyaan izin: *"Izinkan website mengakses kamera Anda?"*, pilih **"Izinkan" (Allow)**.
+  4. Arahkan kamera HP ke meja belajar atau lantai ruang kelas.
+  5. Lambang Garuda akan muncul melayang di atas rekaman kamera:
+     - **Geser Posisi:** Sentuh dan tahan lambang Garuda, lalu geser ke titik meja yang diinginkan.
+     - **Atur Ukuran:** Geser slider *"Ukuran Lambang"* untuk membesarkan atau mengecilkan.
+     - **Atur Sudut:** Geser slider *"Rotasi Derajat"* untuk memutar kemiringan lambang.
+     - **Efek Cahaya:** Beri centang pada opsi *"Efek Cahaya Emas"* agar lambang berpendar cerah.
+  6. Tekan tombol hijau **"Foto Bersama AR"**: Foto di layar akan langsung dijepret dan diunduh otomatis ke galeri HP siswa sebagai portofolio belajar.
+  7. *Catatan:* Jika perangkat tidak memiliki kamera (misal di lab komputer lama), siswa dapat menekan tombol **"Gunakan Simulasi Meja"** untuk tetap belajar menggunakan meja virtual.
 
 ---
 
 ### Mode 3: 3D Nyata di Ruangan (Native AR HP)
-- **Cocok Untuk:** Pengalaman AR tingkat tinggi di smartphone yang mendukung teknologi AR modern (Google ARCore di Android atau QuickLook di Apple iPhone).
-- **Cara Menggunakannya:**
-  1. Buka website di HP. Jika guru membuka di laptop, siswa cukup mengarahkan kamera HP ke **Kode QR** yang tampil di layar laptop guru untuk langsung membuka halaman ini di HP mereka.
+- **Tujuan Pembelajaran:** Memproyeksikan patung 3D Garuda berdimensi nyata berdiri di lantai kelas menggunakan sensor Augmented Reality smartphone modern.
+- **Langkah Penggunaan:**
+  1. Buka website di HP. Jika guru sedang menampilkan web di layar laptop kelas, siswa cukup mengarahkan kamera HP ke **Kode QR** yang ada di layar untuk langsung membuka halaman di HP mereka.
   2. Klik tab **"3D Nyata di Ruangan"**.
-  3. Patung 3D Garuda akan muncul di dalam kotak interaktif.
-  4. Klik tombol emas bertuliskan: **"📱 Tampilkan AR di Ruangan Nyata"**.
-  5. Kamera HP akan terbuka dalam mode AR khusus:
-     - Arahkan kamera HP ke permukaan lantai atau meja yang datar dan terang.
-     - Gerakkan HP perlahan memutar agar sensor HP mengenali permukaan lantai/meja.
-     - Patung 3D Garuda berukuran nyata akan muncul berdiri di atas meja kelas!
-     - Siswa bisa berjalan mendekati patung, mengitari patung dari samping dan belakang, seolah-olah patung tersebut benar-benar ada di dalam kelas.
+  3. Tekan tombol emas: **"📱 Tampilkan AR di Ruangan Nyata"**.
+  4. Kamera HP akan membuka mode AR:
+     - Arahkan kamera HP ke lantai atau meja kelas yang datar dan berpenerangan cukup.
+     - Gerakkan HP perlahan memutar agar sensor smartphone mengenali permukaan meja/lantai.
+     - Patung 3D Garuda berukuran nyata akan muncul berdiri tegak di atas meja atau lantai kelas!
+     - Siswa dapat berjalan mendekat atau mengitari patung dari sisi depan, samping, dan belakang seolah-olah patung tersebut ada di hadapan mereka.
 
 ---
 
 ### Mode 4: Kuis Pendidikan Pancasila
-- **Cocok Untuk:** Evaluasi pemahaman dan penutupan kegiatan belajar.
-- **Cara Menggunakannya:**
+- **Tujuan Pembelajaran:** Melakukan evaluasi pemahaman mandiri setelah mengeksplorasi materi.
+- **Langkah Penggunaan:**
   1. Klik tab **"Kuis Pendidikan Pancasila"**.
-  2. Soal nomor 1 akan tampil beserta 4 pilihan jawaban (A, B, C, D).
-  3. Siswa mengklik salah satu jawaban yang dianggap paling benar:
-     - Jika jawaban **Benar**: Tombol berubah menjadi hijau dan muncul tanda centang.
-     - Jika jawaban **Salah**: Tombol berubah menjadi merah dan pilihan yang benar ditunjukkan.
-     - Kotak **"Penjelasan Guru"** akan langsung muncul menjelaskan alasan jawaban tersebut.
-  4. Klik tombol **"Lanjut ke Soal Berikutnya"**.
-  5. Setelah menyelesaikan 4 soal, kartu hasil belajar akan tampil memuat skor akhir (skala 0–100), jumlah jawaban benar, serta tombol **"Ulangi Kuis"** jika siswa ingin mencoba kembali.
+  2. Baca pertanyaan soal dan pilih salah satu pilihan jawaban (A, B, C, atau D).
+  3. Sistem langsung memberi respons detik itu juga: tombol hijau jika benar atau merah jika salah, disertai **Kotak Penjelasan Guru** yang menerangkan alasan materi tersebut.
+  4. Klik tombol **"Lanjut ke Soal Berikutnya"** hingga soal nomor 4 selesai.
+  5. Kartu hasil belajar akan tampil memuat skor akhir (skala 0–100), jumlah jawaban benar, serta tombol **"Ulangi Kuis"** jika siswa ingin mencoba kembali.
 
 ---
 
-## 6. Tanya-Jawab Teknis Populer (FAQ & Troubleshooting)
-
-Berikut jawaban atas pertanyaan-pertanyaan yang paling sering muncul seputar operasional media ini:
+## 6. Tanya-Jawab Teknis, Pemecahan Masalah (Troubleshooting) & Biaya Perawatan
 
 ### 1. Bagaimana jika kamera HP tidak mau menyala saat tombol diklik?
-- **Penyebab:** Biasanya pengguna secara tidak sengaja menekan tombol "Blokir" (*Block*) saat browser meminta izin kamera, atau izin kamera di aplikasi Google Chrome HP belum diaktifkan.
-- **Solusi:**
-  1. Di HP, buka browser Chrome, klik ikon gembok / pengaturan situs di sebelah kiri alamat web (URL).
-  2. Cari menu **"Izin" (Permissions) -> "Kamera" (Camera)**, lalu ubah dari "Blokir" menjadi **"Izinkan" (Allow)**.
-  3. Muat ulang (*refresh*) halaman web dan klik tombol nyalakan kamera kembali.
+- **Penyebab:** Pengguna biasanya tidak sengaja menekan tombol "Blokir" (*Block*) saat browser meminta izin kamera, atau izin kamera pada aplikasi Google Chrome di pengaturan HP belum aktif.
+- **Solusi Langkah demi Langkah:**
+  1. Pada aplikasi browser Google Chrome di HP, perhatikan bilah alamat web (URL) di bagian atas.
+  2. Klik ikon pengaturan atau gembok di sebelah kiri alamat web.
+  3. Pilih menu **"Izin" (Permissions) -> "Kamera" (Camera)**, lalu ubah pilihannya menjadi **"Izinkan" (Allow)**.
+  4. Muat ulang (*refresh*) halaman web, lalu tekan kembali tombol "Nyalakan Kamera AR".
 
-### 2. Apakah media ini bisa dibuka di HP jadul yang tidak mendukung AR?
-- **Bisa!** Inilah alasan mengapa media ini dibagi menjadi 4 mode belajar.
-  - Jika HP siswa belum mendukung sensor AR canggih (Mode 3), siswa tetap bisa belajar menggunakan **Mode 1 (Eksplorasi 3D)** dan **Mode 2 (Kamera WebAR Interaktif)** yang kompatibel dengan 99% semua jenis smartphone yang memiliki kamera dan browser.
-  - Bahkan jika tidak memiliki HP sama sekali, siswa tetap bisa belajar bersama di kelas melalui laptop dan proyektor yang dipandu oleh guru.
+### 2. Apakah media ini bisa digunakan di HP lama yang tidak memiliki sensor AR canggih?
+- **Sangat bisa.** Inilah alasan utama mengapa media ini dirancang dengan 4 mode belajar berbeda:
+  - Jika HP siswa belum memiliki sensor AR ruang (Mode 3), siswa tetap dapat belajar dengan lancar menggunakan **Mode 1 (Eksplorasi 3D & Suara)** dan **Mode 2 (Kamera WebAR Interaktif)** yang kompatibel dengan 99% semua jenis smartphone berlayar sentuh.
+  - Bahkan jika siswa tidak memegang HP sama sekali di kelas, guru dapat memandu pembelajaran secara klasikal menggunakan 1 buah laptop dan proyektor kelas.
 
-### 3. Apakah website ini membutuhkan kuota internet yang banyak?
-- **Sangat hemat.** Semua berkas gambar dan model 3D di website ini telah dikompresi sedemikian rupa. Model 3D Garuda hanya berukuran sekitar ~580 KB (kurang dari 1 MB), jauh lebih kecil dibandingkan membuka 1 foto di media sosial Instagram (yang bisa memakan 2–5 MB). Begitu website sudah terbuka sekali, halaman akan tersimpan di memori sementara (*cache*) browser sehingga pembukaan berikutnya jauh lebih cepat.
+### 3. Apakah website ini menghabiskan banyak kuota internet siswa?
+- **Sangat hemat.** Semua aset grafis dan model 3D di website ini telah dikompresi secara maksimal. Patung 3D Garuda hanya berukuran sekitar **~580 KB** (kurang dari 1 MB), jauh lebih kecil dibandingkan membuka 1 foto di aplikasi Instagram (yang rata-rata memakan kuota 2–5 MB). Sekali website dibuka, seluruh halaman akan tersimpan di memori sementara (*cache*) browser sehingga pembukaan berikutnya berjalan instan tanpa menyedot kuota lagi.
 
-### 4. Apakah sekolah harus membayar biaya bulanan untuk merawat web ini?
-- **Tidak ada biaya sama sekali (Rp 0 / Gratis Seumur Hidup).**
-  - Penyimpanan file dan server disiarkan oleh Netlify paket gratis.
-  - Fitur pembaca suara menggunakan Web Speech API yang ada di dalam HP pengguna (bukan langganan layanan berbayar).
+### 4. Apakah pihak sekolah harus mengeluarkan biaya langganan bulanan atau tahunan?
+- **Sama sekali tidak ada biaya (100% Gratis Seumur Hidup / Rp 0).**
+  - Server siar cloud Netlify menggunakan paket gratis selamanya.
   - Repositori kode tersimpan gratis di GitHub.
+  - Suara narasi otomatis menggunakan Web Speech API yang sudah ada di dalam sistem operasi HP/laptop pengguna (bukan API berbayar dari pihak luar).
+  - Tidak ada biaya perawatan bulanan yang membebani kas sekolah.
 
 ---
-*Dokumen ini merupakan panduan resmi penjelasan proyek Website Profil & Media Pembelajaran WebAR SDN Pakis V Surabaya.*
+*Dokumen ini merupakan panduan teknis dan operasional resmi proyek Website & Media Pembelajaran WebAR SDN Pakis V/372 Surabaya.*
